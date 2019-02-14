@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    url: `https://petalimn.com`,
-    title: `Petalimn`,
+    title: `PETALIMN`,
+    subtitle: `CAKE DESIGN`,
     description: `Petalimn Cake Design`,
+    url: `https://petalimn.com`,
+    facebook: `https://www.facebook.com/petalimn/`,
+    instagram: `https://www.instagram.com/petalimn/`,
+    location: 'Laguna Niguel, CA, USA',
+    email: 'contact@petalimn.com',
     author: `James Tan`,
     defaultImage: '/img/logo.png', //need to change path
   },
