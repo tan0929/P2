@@ -5,10 +5,10 @@ import { FaInstagram } from 'react-icons/fa';
 import { graphql, StaticQuery } from 'gatsby';
 
 
-const SocialLink = ({icon, size, padding, url})=>{
+const SocialLink = ({icon, size, padding, url, color})=>{
     const Icon = icon;
     return(
-        <Link to={url} blank padding={padding}>
+        <Link to={url} blank padding={padding} color={color}>
             <Icon size={size} />
         </Link>
     );
@@ -23,25 +23,23 @@ const query = graphql`{
     }
 }`;
 
-const Facebook = ({size, padding})=> <StaticQuery
+const Facebook = ({...props})=> <StaticQuery
     query={query}
     render={data=>(
         <SocialLink 
             icon={FaFacebookF}
-            size={size}
-            padding={padding}
+            {...props}
             url={data.site.siteMetadata.facebook}
         />
     )}
 />
 
-const Instagram = ({size, padding})=> <StaticQuery
+const Instagram = ({...props})=> <StaticQuery
     query={query}
     render={data=>(
         <SocialLink 
             icon={FaInstagram}
-            size={size}
-            padding={padding}
+            {...props}
             url={data.site.siteMetadata.instagram}
         />
     )}

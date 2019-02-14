@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Link from './betterLink';
 import { Facebook, Instagram } from './socialLink';
 import { graphql, StaticQuery } from 'gatsby';
+import { Secondary } from './text';
 
 const options = [
     {
@@ -41,12 +42,11 @@ const NavWrapper = styled.div`
 
 const BasicOptions = options.map(({name,path},index)=>(
     <ItemWrapper key={index}>
-        <Link to={path} key={index}>
-            {name}
+        <Link to={path} key={index} color='#DDD'>
+            <Secondary size='16px'>{name}</Secondary>
         </Link>
     </ItemWrapper>
 ));
-
 
 const Nav = ()=>(
     <StaticQuery 
@@ -61,8 +61,8 @@ const Nav = ()=>(
         render={ data =>(
             <NavWrapper>
                 {BasicOptions}
-                <Facebook size='20px' padding='0 10px'/>
-                <Instagram size='20px' padding='0 10px'/>
+                <Facebook size='18px' padding='0 10px'/>
+                <Instagram size='18px' padding='0 10px'/>
             </NavWrapper>
         )}
     />

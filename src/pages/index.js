@@ -1,15 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Welcome from '../chunks/welcome';
+import Form from '../components/form';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Petalimn" keywords={[`petalimn`, `cake`, `design`]} />
     <Welcome />
+    <Form />
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;

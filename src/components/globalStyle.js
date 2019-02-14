@@ -6,7 +6,10 @@ import PlayFairDisplayRegular from '../fonts/PlayfairDisplay-Regular.ttf';
 const GlobalStyle = createGlobalStyle`
     body{
         background-color: #DAC6BD;
-        margin: auto;
+        margin: 0;
+        padding: 0 !important; /* This !important is a solution for material ui, modal add padding to body bug*/
+        overflow: auto !important; /* And this whole line too */
+        font-family: sans-serif;
     }
     @font-face {
       font-family: Nunito-Light;

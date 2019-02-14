@@ -1,7 +1,9 @@
 import React from "react"
 import styled from 'styled-components';
 import Nav from './nav';
+import MobileNav from './mobileNav';
 import Link from './betterLink';
+import { Media } from 'react-breakpoints';
 
 import { Main, Secondary } from './text';
 
@@ -13,8 +15,8 @@ const StyledHeader = styled.header`
 
 const TitleWrapper = styled.div`
   flex-grow: 1;
-  min-width: 200px;
-  padding: 30px 0 30px 40px;
+  min-width: 150px;
+  padding: 30px 40px;
 `;
 
 const Title = ({children})=>(
@@ -32,13 +34,20 @@ const Header = ({ siteTitle, siteSubtitle }) => (
         {siteSubtitle}
       </Subtitle>
       <Title>
-        <Link to='/'>
+        <Link to='/' color='#DDD'>
           {siteTitle}
         </Link>
       </Title>
     </TitleWrapper>
-    <Nav />
+    <Media>
+    {({breakpoints, currentBreakpoint})=>(
+      breakpoints[currentBreakpoint] > breakpoints.mobileLandscape ?
+      <Nav />
+      :
+      <MobileNav />
+    )}  
+    </Media>
   </StyledHeader>
 )
 
-export default Header
+export default Header;

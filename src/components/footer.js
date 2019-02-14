@@ -43,12 +43,12 @@ const Title = ({children})=>(
 );
 
 const Subtitle = ({children})=>(
-    <Main
+    <Secondary
         size='16px'
         padding='15px'
     >
         {children}
-    </Main>
+    </Secondary>
 );
 
 const Test = ({data})=>{
