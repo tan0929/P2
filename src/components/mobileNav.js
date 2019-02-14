@@ -62,7 +62,7 @@ const MobileNav = ()=>{
     return(
         <IconWrapper>
             <div onClick={()=>setVisible(true)}>
-                <FaBars size ='30px' color='#DDD'/>{console.log(visible)}
+                <FaBars size ='30px' color='#DDD'/>
             </div>
             <StyledDrawer
                 open={visible} 

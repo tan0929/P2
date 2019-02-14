@@ -7,6 +7,7 @@ module.exports = {
     facebook: `https://www.facebook.com/petalimn/`,
     instagram: `https://www.instagram.com/petalimn/`,
     location: 'Laguna Niguel, CA, USA',
+    slogan: 'Every petal we made is one of a kind',
     email: 'contact@petalimn.com',
     author: `James Tan`,
     defaultImage: '/img/logo.png', //need to change path
