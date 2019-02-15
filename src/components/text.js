@@ -10,9 +10,10 @@ const Text = styled.p`
     ${props=>props.color ? `color: ${props.color};` : '' }
     ${props=>props.size ? `font-size: ${props.size};` : '' }
     ${props=>props.weight ? `font-weight: ${props.weight};` : '' }
+    ${({lineHeight})=>lineHeight? `line-height: ${lineHeight};`: ''}
 `;
 
-const Main = ({children, color, size, weight, display, padding, margin})=>(
+const Main = ({children, color, size, weight, display, padding, margin, ...props})=>(
     <Text 
         fontFamily='PlayfairDisplay-Regular'
         display={ display? display: 'inline-block'}
@@ -21,12 +22,13 @@ const Main = ({children, color, size, weight, display, padding, margin})=>(
         color={ color? color: '#DDD'}
         size={ size? size: '22px'}
         weight={ weight? weight: '200'}
+        {...props}
     >
         {children}
     </Text>
 );
 
-const Secondary = ({children, color, size, weight, display, padding, margin})=>(
+const Secondary = ({children, color, size, weight, display, padding, margin, ...props})=>(
     <Text 
         fontFamily='Nunito-Light'
         display={ display? display: 'inline-block' }
@@ -35,6 +37,7 @@ const Secondary = ({children, color, size, weight, display, padding, margin})=>(
         color={ color? color: '#DDD' }
         size={ size? size: '16px' }
         weight={ weight? weight: '200' }
+        {...props}
     >
         {children}
     </Text>

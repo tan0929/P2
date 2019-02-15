@@ -5,7 +5,6 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from "gatsby-image";
 import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary } from '../components/text';
-
 import { Media } from 'react-breakpoints';
 
 const StyledImg = styled(Img)`
@@ -48,7 +47,7 @@ const Panel = ({data})=>(
             return(
                 <AbsolutePanel>
                     <Main size={large?'80px':'55px'} color='#DAC6BD' margin='100px 0 0 0'>{data.site.siteMetadata.title}</Main>
-                    <Secondary size={large?'24px':'18px'}>{data.site.siteMetadata.slogan}</Secondary>
+                    <Secondary size={large?'20px':'18px'}>{data.site.siteMetadata.slogan}</Secondary>
                 </AbsolutePanel>
             );
         }

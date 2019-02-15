@@ -9,10 +9,11 @@ const StyledDiv = styled.div`
     background-color: ${props=>props.backgroundColor? props.backgroundColor: '#232529'};
     width: 100%;
     min-height:  400px;
+    ${({padding})=>padding? `padding: ${padding}` : ``}
 `;
 
-const Section = ({children, backgroundColor}) =>(
-    <StyledDiv backgroundColor={backgroundColor}>
+const Section = ({children, backgroundColor, padding}) =>(
+    <StyledDiv backgroundColor={backgroundColor} padding={padding}>
         {children}
     </StyledDiv>
 );
