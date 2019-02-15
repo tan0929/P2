@@ -12,10 +12,11 @@ const StyledDiv = styled.div`
     width: 100%;
     min-height:  400px;
     ${({padding})=>padding? `padding: ${padding}` : ``}
+    ${({height})=>height? `height: ${height}` : ``}
 `;
 
-const Section = ({children, backgroundColor, padding}) =>(
-    <StyledDiv backgroundColor={backgroundColor} padding={padding}>
+const Section = ({children, backgroundColor, padding, height}) =>(
+    <StyledDiv backgroundColor={backgroundColor} padding={padding} height={height}>
         {children}
     </StyledDiv>
 );

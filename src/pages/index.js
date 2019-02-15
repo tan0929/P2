@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Welcome from '../chunks/welcome';
 import Intro from '../chunks/intro';
 import Booking from '../chunks/booking';
+import GetInTouch from '../chunks/getintouch';
 import Form from '../components/form';
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Welcome />
     <Intro />
     <Booking />
+    <GetInTouch />
   </Layout>
 )
 

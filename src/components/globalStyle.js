@@ -5,7 +5,7 @@ import PlayFairDisplayRegular from '../fonts/PlayfairDisplay-Regular.ttf';
 
 const GlobalStyle = createGlobalStyle`
     body{
-        background-color: #DAC6BD;
+        background-color: rgba(0,0,0,0);
         margin: 0;
         padding: 0 !important; /* This !important is a solution for material ui, modal add padding to body bug*/
         overflow: auto !important; /* And this whole line too */
