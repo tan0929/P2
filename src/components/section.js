@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
+    user-select: none;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;

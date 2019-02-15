@@ -9,6 +9,7 @@ import { Main, Secondary } from './text';
 
 
 const StyledHeader = styled.header`
+  user-select: none;
   background-color: #1E2025;
   display: flex;
 `;

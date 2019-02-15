@@ -33,7 +33,7 @@ const Welcome = ()=>(
         query={query}
         render={data=>(
             <Section>
-                <StyledImg fluid={data.test.childImageSharp.fluid} />
+                <StyledImg fluid={data.bg.childImageSharp.fluid} />
                 <Panel data={data}/>
             </Section>   
         )}
@@ -58,7 +58,7 @@ export default Welcome;
 
 const query = graphql`
   query {
-    test : file(relativePath: { eq: "01.jpg" }) {
+    bg : file(relativePath: { eq: "01.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64
