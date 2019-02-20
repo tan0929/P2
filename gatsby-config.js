@@ -9,6 +9,7 @@ module.exports = {
     location: 'Laguna Niguel, CA, USA',
     slogan: 'Every petal we made is one of a kind',
     email: 'contact@petalimn.com',
+    founder: 'Evelyn W.',
     author: `James Tan`,
     defaultImage: '/img/logo.png', //need to change path
   },

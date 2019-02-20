@@ -76,7 +76,7 @@ const query = graphql`
     }
 
     allMarkdownRemark(filter:{frontmatter:{title :{
-        eq: "intro"
+        eq: "About Petalimn"
       }}}){
         edges{
           node{
