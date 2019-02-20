@@ -1,6 +1,5 @@
 
 import React from 'react';
-import styled from 'styled-components';
 import { Main, Secondary } from './text';
 import { StaticQuery, graphql } from 'gatsby';
 import { Facebook, Instagram } from './socialLink';
@@ -20,7 +19,7 @@ const Footer = ()=>(
                     }
                 }
             }`}
-            render={data=><Test data={data}/>}
+            render={data=><Content data={data}/>}
         />
     </footer>
 );
@@ -51,11 +50,11 @@ const Subtitle = ({children})=>(
     </Secondary>
 );
 
-const Test = ({data})=>{
-    const {title, subtitle, email, location, facebook, instagram} = data.site.siteMetadata;
+const Content = ({data})=>{
+    const {title, subtitle, email, location} = data.site.siteMetadata;
 
     return(
-        <Section>
+        <Section padding='40px 0 60px 0'>
             <div>
                 <Subtitle>{subtitle}</Subtitle>
                 <Title>{title}</Title>

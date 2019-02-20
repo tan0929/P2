@@ -7,7 +7,6 @@ import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary } from '../components/text';
 import { Media } from 'react-breakpoints';
 import Button from '../components/button';
-import Link from '../components/betterLink';
 import EmailLink from '../components/emailLink';
 
 const StyledImg = styled(Img)`

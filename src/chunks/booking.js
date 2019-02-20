@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import Section from '../components/section';
 import { graphql, StaticQuery } from 'gatsby';
 import Img from "gatsby-image";
-import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary } from '../components/text';
-import { Media } from 'react-breakpoints';
 import Button from '../components/button';
 
 const StyledImg = styled(Img)`

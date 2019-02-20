@@ -6,8 +6,6 @@ import Section from '../components/section';
 import { Secondary, Main } from "../components/text";
 import Button from '../components/button';
 
-
-
 const StyledImg = styled(Img)`
     border-radius: 150px;
     width: 300px;

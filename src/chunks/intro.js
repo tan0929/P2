@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import Section from '../components/section';
 import { graphql, StaticQuery } from 'gatsby';
 import Img from "gatsby-image";
-import breakpoint from 'styled-components-breakpoint';
-import { Main, Secondary } from '../components/text';
-import { Media } from 'react-breakpoints';
+import { Main } from '../components/text';
 import Button from '../components/button';
 
 const StyledImg = styled(Img)`
@@ -25,7 +23,6 @@ const AlignCenter = styled.div`
     text-align: center;
     margin: 0 30px
 `;
-
 const AlignRight = styled.div`
     box-sizing: border-box;
     max-width: 700px;
