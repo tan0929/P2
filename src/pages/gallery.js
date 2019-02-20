@@ -73,13 +73,13 @@ const CellWrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 60px 0;
+    padding: 0 0 60px 0;
 `;
 
 const Content = ({data})=>(
     <Layout>
         <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
-        <Section>
+        <Section padding='30px 0 0 0'>
             <Title />
                 <CellWrapper>
                     {data.allFile.edges.map((edge,index)=>(
