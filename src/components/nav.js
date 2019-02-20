@@ -43,7 +43,7 @@ const NavWrapper = styled.div`
 const BasicOptions = options.map(({name,path},index)=>(
     <ItemWrapper key={index}>
         <Link to={path} key={index} color='#DDD'>
-            <Secondary size='16px'>{name}</Secondary>
+            <Secondary size='15px'>{name}</Secondary>
         </Link>
     </ItemWrapper>
 ));
