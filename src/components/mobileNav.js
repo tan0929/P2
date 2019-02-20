@@ -41,6 +41,7 @@ const NavWrapper = styled.div`
     padding: 100px 0 0 0;
     width: 200px;
     height: 100%;
+    -webkit-tap-highlight-color: transparent;
 `;
 
 const StyledDrawer = styled(Drawer)`
@@ -69,7 +70,7 @@ const MobileNav = ()=>{
                 onClose={()=>setVisible(false)}
                 anchor='right'
             >
-                <NavWrapper>
+                <NavWrapper onClick={()=>setVisible(false)}>
                     {BasicOptions}
                     <SocialWrapper>
                         <Facebook size='20px' padding='0 20px 0  0' color='black'/>

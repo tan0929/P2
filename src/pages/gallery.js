@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import styled from 'styled-components';
-import Layout from "../components/layout"
 import breakpoint from 'styled-components-breakpoint';
 import SEO from "../components/seo"
 import Img from "gatsby-image";
@@ -77,7 +76,7 @@ const CellWrapper = styled.div`
 `;
 
 const Content = ({data})=>(
-    <Layout>
+    <div>
         <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
         <Section padding='30px 0 0 0'>
             <Title />
@@ -87,7 +86,7 @@ const Content = ({data})=>(
                     ))}
                 </CellWrapper>
         </Section>
-    </Layout>
+    </div>
 );
 
 export default Gallery;

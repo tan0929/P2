@@ -17,32 +17,34 @@ const breakpoints = {
   desktopWide: 1920,
 }
 
+
+//need to fix the reactbreakpoints warning
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            subtitle
+  <ReactBreakpoints breakpoints={breakpoints}>
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+              subtitle
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <ReactBreakpoints breakpoints={breakpoints}>
-        <Header 
-          siteTitle={data.site.siteMetadata.title}
-          siteSubtitle={data.site.siteMetadata.subtitle}
-        />
-        <div>
-          <GlobalStyle />
-          <main>{children}</main>
-          <Footer />
-        </div>
-      </ReactBreakpoints>
-    )}
-  />
+      `}
+      render={data => (
+          <Header 
+            siteTitle={data.site.siteMetadata.title}
+            siteSubtitle={data.site.siteMetadata.subtitle}
+          />
+      )}
+    />
+    <div>
+      <GlobalStyle />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  </ReactBreakpoints>
 )
 
 Layout.propTypes = {

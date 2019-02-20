@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Welcome from '../chunks/welcome';
 import Intro from '../chunks/intro';
@@ -8,14 +7,14 @@ import GetInTouch from '../chunks/getintouch';
 import InstagramShow from "../chunks/instagramShow";
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="Home" keywords={[`petalimn`, `cake`, `design`]} />
     <Welcome />
     <Intro />
     <Booking />
     <GetInTouch />
     <InstagramShow />
-  </Layout>
+  </div>
 )
 
 export default IndexPage;

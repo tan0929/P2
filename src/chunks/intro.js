@@ -64,7 +64,7 @@ export default Intro;
 
 const query = graphql`
   query {
-    logo : file(relativePath: { eq: "logo.png" }) {
+    logo: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64

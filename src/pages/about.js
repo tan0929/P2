@@ -1,6 +1,5 @@
 import React from "react"
 import styled from 'styled-components';
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image";
 import { graphql, StaticQuery } from 'gatsby';
@@ -17,7 +16,7 @@ const Page = styled.div`
 `;
 
 const AboutPage = () => (
-    <Layout>
+    <div>
         <SEO title="About" keywords={[`petalimn`, `cake`, `design`]} />
         <StaticQuery 
             query={query}
@@ -29,14 +28,14 @@ const AboutPage = () => (
                 </Page>
             )}
         />
-    </Layout>
+    </div>
 );
   
 export default AboutPage;
   
 const query = graphql`
   query {
-    banner : file(relativePath: { eq: "02.jpg" }) {
+    banner: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "02.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64

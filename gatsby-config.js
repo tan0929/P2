@@ -17,6 +17,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+          component: require.resolve(`${__dirname}/src/components/layout.js`)
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/img`,

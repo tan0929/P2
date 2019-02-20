@@ -61,7 +61,7 @@ export default Founder;
 
 const query = graphql`
   query {
-    portrait : file(relativePath: { eq: "05.jpg" }) {
+    portrait: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "05.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64

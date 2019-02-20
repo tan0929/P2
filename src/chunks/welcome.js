@@ -58,7 +58,7 @@ export default Welcome;
 
 const query = graphql`
   query {
-    bg : file(relativePath: { eq: "01.jpg" }) {
+    bg: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "01.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64

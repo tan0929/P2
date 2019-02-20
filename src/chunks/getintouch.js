@@ -99,7 +99,7 @@ export default GetInTouch;
 
 const query = graphql`
   query {
-    bg : file(relativePath: { eq: "13.jpg" }) {
+    bg: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "13.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64
