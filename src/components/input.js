@@ -112,6 +112,8 @@ const Input = ({type, label, required, width, ...props})=>(
 const Textarea = ({label, required, cols, rows, maxLength, width, ...props})=>(
     <Wrapper width={width}>
         <StyledTextarea
+            aria-invalid='false'
+            data-gramm_editor="false"
             maxLength={maxLength}
             cols={cols} 
             rows={rows} 

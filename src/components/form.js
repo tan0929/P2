@@ -15,11 +15,7 @@ const StyledForm = styled.form`
 
 const Form = ({width})=>{
     return(
-        <StyledForm width={width} name="contact" method="POST" netlify-honeypot="bot-field" netlify>
-            <input type="hidden" name="form-name" value="contact" />
-            <Hidden>
-                <input name="bot-field" />
-            </Hidden>
+        <StyledForm width={width} name="contact" method="post" netlify>
             <Input type='text' label='Name' name='name' required/>
             <Input type='email' label='Email' name='email' required />
             <Input type='text' label='Subject' name='subject' required />

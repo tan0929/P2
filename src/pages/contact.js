@@ -7,16 +7,6 @@ import breakpoint from 'styled-components-breakpoint';
 import Form from '../components/form'
 import { Main, Secondary } from "../components/text";
 
-const Contact =()=>(
-    <Background>
-        <SEO title="Contact" keywords={[`petalimn`, `cake`, `design`]} />
-        <StaticQuery
-            query={query}
-            render={data=>(<Content data={data}/>)}
-        />
-    </Background>
-);
-
 const Background = styled.div`
     background-color: #232529;
     padding: 0 0 60px 0;
@@ -31,7 +21,6 @@ const Container = styled.div`
         display: flex;
         align-items: stretch;
     `}
-    
 `;
 
 const FormWrapper = styled.div`
@@ -60,6 +49,9 @@ const Title = styled(Main)`
     font-size: 40px;
     color: #DBC8BE;
     margin: 20px 40px;
+    ${breakpoint('tablet')`
+        margin: 20px 80px;
+    `}
 `;
 
 const Text = styled(Secondary)`
@@ -82,6 +74,16 @@ const Content=({data})=>(
             <Form/>
         </FormWrapper>
     </Container>
+);
+
+const Contact =()=>(
+    <Background>
+        <SEO title="Contact" keywords={[`petalimn`, `cake`, `design`]} />
+        <StaticQuery
+            query={query}
+            render={data=>(<Content data={data}/>)}
+        />
+    </Background>
 );
 
 export default Contact;

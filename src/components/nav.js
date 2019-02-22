@@ -45,7 +45,7 @@ const Text = styled(Secondary)`
     font-size: 15px;
 `;
 
-const BasicOptions = options.map(({name,path},index)=>(
+const BasicOptions = options.map(({name, path},index)=>(
     <ItemWrapper key={index}>
         <Link to={path} key={index} >
             <Text contrast>{name}</Text>
@@ -53,24 +53,28 @@ const BasicOptions = options.map(({name,path},index)=>(
     </ItemWrapper>
 ));
 
+const Content = ({data})=>(
+    <NavWrapper>
+        {BasicOptions}
+        <Facebook size='18px' padding='0 10px'/>
+        <Instagram size='18px' padding='0 10px'/>
+    </NavWrapper>
+);
+
 const Nav = ()=>(
     <StaticQuery 
-        query={graphql`{
-          site{
-            siteMetadata{
-              facebook
-              instagram
-            }
-          }
-        }`}
-        render={ data =>(
-            <NavWrapper>
-                {BasicOptions}
-                <Facebook size='18px' padding='0 10px'/>
-                <Instagram size='18px' padding='0 10px'/>
-            </NavWrapper>
-        )}
+        query={query}
+        render={ data => <Content data={data}/>}
     />
 );
 
 export default Nav;
+
+const query = graphql`{
+    site{
+        siteMetadata{
+        facebook
+        instagram
+        }
+    }
+}`;

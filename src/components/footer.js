@@ -9,23 +9,7 @@ import Logo from './logo';
 import Section from './section';
 import EmailLink from '../components/emailLink';
 
-const Footer = ()=>(
-    <footer>
-        <StaticQuery
-            query={graphql`{
-                site{
-                    siteMetadata{
-                        title
-                        subtitle
-                        email
-                        location
-                    }
-                }
-            }`}
-            render={data=><Content data={data}/>}
-        />
-    </footer>
-);
+
 
 const Text = styled(Secondary)`
     display: block;
@@ -55,10 +39,30 @@ const Content = ({data})=>{
                 <Facebook size='22px' padding='20px' />
                 <Instagram size='22px' padding='20px' />
             </div>
-            <Text>© {new Date().getFullYear()} by {title}</Text>
+            <Text contrast>© {new Date().getFullYear()} by {title}</Text>
             
         </Section>
     )
 };
 
+const Footer = ()=>(
+    <footer>
+        <StaticQuery
+            query={query}
+            render={data=><Content data={data}/>}
+        />
+    </footer>
+);
+
 export default Footer;
+
+const query = graphql`{
+    site{
+        siteMetadata{
+            title
+            subtitle
+            email
+            location
+        }
+    }
+}`;
