@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import Drawer from '@material-ui/core/Drawer';
 import Link from './betterLink';
 import { Secondary } from './text';
-import { Facebook, Instagram } from './socialLink';
+import Facebook from './facebook';
+import Instagram from './instagram';
 
 const options = [
     {

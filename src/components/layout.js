@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import GlobalStyle from './globalStyle';
 import ReactBreakpoints from 'react-breakpoints';
-import styled from 'styled-components';
 import Header from './header';
 import Footer from './footer';
 

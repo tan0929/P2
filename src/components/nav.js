@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from './betterLink';
-import { Facebook, Instagram } from './socialLink';
+import Facebook from './facebook';
+import Instagram from './instagram';
 import { graphql, StaticQuery } from 'gatsby';
 import { Secondary } from './text';
 
