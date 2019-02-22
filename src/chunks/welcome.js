@@ -5,12 +5,10 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from "gatsby-image";
 import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary } from '../components/text';
-import { Media } from 'react-breakpoints';
 
 const StyledImg = styled(Img)`
     width: 100%;
     height: 400px;
-    
 `;
 
 const AbsolutePanel = styled.div`
@@ -56,19 +54,14 @@ const Subtitle = styled(Secondary)`
     `}
 `;
 
-const Panel = ({data})=>(
-    <Media>{
-        ({breakpoints, currentBreakpoint})=>{
-            const large = breakpoints[currentBreakpoint] > breakpoints.mobileLandscape;
-            return(
-                <AbsolutePanel>
-                    <Title>{data.site.siteMetadata.title}</Title>
-                    <Subtitle contrast>{data.site.siteMetadata.slogan}</Subtitle>
-                </AbsolutePanel>
-            );
-        }
-    }</Media>
-);
+const Panel = ({data})=>{
+    return(
+        <AbsolutePanel>
+            <Title>{data.site.siteMetadata.title}</Title>
+            <Subtitle contrast>{data.site.siteMetadata.slogan}</Subtitle>
+        </AbsolutePanel>
+    );
+};
 
 export default Welcome;
 

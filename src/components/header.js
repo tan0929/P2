@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Nav from './nav';
 import MobileNav from './mobileNav';
 import Link from './betterLink';
-import { Media } from 'react-breakpoints';
-
+import ReactResizeDetector from 'react-resize-detector';
 import { Main, Secondary } from './text';
 
 
@@ -45,14 +44,9 @@ const Header = ({ siteTitle, siteSubtitle }) => (
         </Title>
       </Link>
     </TitleWrapper>
-    <Media>
-    {({breakpoints, currentBreakpoint})=>(
-      breakpoints[currentBreakpoint] > breakpoints.mobileLandscape ?
-      <Nav />
-      :
-      <MobileNav />
-    )}  
-    </Media>
+    <ReactResizeDetector handleWidth>
+      {(width)=>width > 720? <Nav />: <MobileNav />}
+    </ReactResizeDetector>
   </StyledHeader>
 )
 

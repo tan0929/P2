@@ -25,10 +25,10 @@
     "netlify-cms": "^2.4.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
-    "react-breakpoints": "^3.0.3",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.3.0",
+    "react-resize-detector": "^3.4.0",
     "styled-components": "^4.1.3",
     "styled-components-breakpoint": "^2.1.1"
   },
