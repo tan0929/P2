@@ -1,5 +1,6 @@
 ---
 title: Meet Evelyn W.
+slogan: “ There are no established rules in piping flowers, just pip with your rhythm”.
 ---
 
 Hi, I am Evelyn, home baker, designer , instructor and founder of Petalimn. I am from Taiwan, stayed in Beijing for several years, now living in Laguna Niguel. We are loving SoCal living.

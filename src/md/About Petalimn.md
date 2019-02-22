@@ -1,5 +1,6 @@
 ---
 title: About Petalimn
+founder: Evelyn W.
 ---
 
 Petalimn cake design is a premier bean paste flowercake design studio in Los Angeles. We are using only the finest and healthiest ingredients, like bean paste, natural food powder, rice cakes ect., they are also good vegan alternative as there is no dairy or animal products used in our some recipe. Secret tricks and tips in coloring, hand-piping, arrangement that means every cake is unique.

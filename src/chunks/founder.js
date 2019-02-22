@@ -51,7 +51,7 @@ const Founder = () => (
                 <Wrapper>
                     <StyledImg fluid={data.portrait.childImageSharp.fluid} />
                     <Title>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
-                    <Subtitle>“ There are no established rules in piping flowers, just pip with your rhythm”.</Subtitle>
+                    <Subtitle>{data.allMarkdownRemark.edges[0].node.frontmatter.slogan}</Subtitle>
                     <Content data={data}/>
                     <Button contrast text='Get In Touch'/>
                 </Wrapper>
@@ -85,6 +85,7 @@ const query = graphql`
           html
           frontmatter{
               title
+              slogan
           }
         }
       }

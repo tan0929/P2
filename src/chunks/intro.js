@@ -52,13 +52,13 @@ const Intro = ()=>(
                 <StyledImg fluid={data.logo.childImageSharp.fluid} />
                 <TextWrapper>
                 <Text>
-                    {data.allMarkdownRemark.edges[0].node.excerpt}
+                    {data.about.edges[0].node.excerpt}
                 </Text>
                 <Slogan>
-                    “ There are no established rules in piping flowers, just pip with your rhythm”.
+                    {data.intro.edges[0].node.frontmatter.slogan}
                 </Slogan>
                 <Signature>
-                    Evelyn W.
+                    {data.about.edges[0].node.frontmatter.founder}
                 </Signature>
                 </TextWrapper>
                 <Button text='Learn More'/>
@@ -81,14 +81,28 @@ const query = graphql`
       }
     }
 
-    allMarkdownRemark(filter:{frontmatter:{title :{
+    about: allMarkdownRemark(filter:{frontmatter:{title :{
         eq: "About Petalimn"
-      }}}){
-        edges{
-          node{
-            excerpt(pruneLength: 300)
+    }}}){
+      edges{
+        node{
+          excerpt(pruneLength: 300)
+          frontmatter{
+            founder
           }
         }
       }
+    }
+    intro: allMarkdownRemark(filter:{frontmatter:{title :{
+      eq: "Meet Evelyn W."
+    }}}){
+      edges{
+        node{
+          frontmatter{
+            slogan
+          }
+        }
+      }
+    }
   }
 `;
