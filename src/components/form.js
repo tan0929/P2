@@ -13,10 +13,15 @@ const StyledForm = styled.form`
     width: 80%;
 `;
 
+const BFInput = styled.input`
+    display: none;
+`;
+
 const Form = ()=>{
     return(
-        <StyledForm name="contact" method="post" data-netlify="true">
+        <StyledForm name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
+            <BFInput name="bot-field" />
             <Input type='text' label='Name' name='name' required/>
             <Input type='email' label='Email' name='email' required />
             <Input type='text' label='Subject' name='subject' required />
