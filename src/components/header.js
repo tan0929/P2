@@ -9,6 +9,9 @@ import { Main, Secondary } from './text';
 
 
 const StyledHeader = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   user-select: none;
   background-color: #1E2025;
   display: flex;

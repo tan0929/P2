@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import GlobalStyle from './globalStyle';
 import ReactBreakpoints from 'react-breakpoints';
-
+import styled from 'styled-components';
 import Header from './header';
 import Footer from './footer';
 
@@ -16,7 +16,6 @@ const breakpoints = {
   desktopLarge: 1500,
   desktopWide: 1920,
 }
-
 
 //need to fix the reactbreakpoints warning
 const Layout = ({ children }) => (
