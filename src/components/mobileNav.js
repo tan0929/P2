@@ -52,9 +52,13 @@ const SocialWrapper = styled.div`
     margin: 30px 0 0 0;
 `;
 
+const Text = styled(Secondary)`
+    font-size: 14px;
+`;
+
 const BasicOptions = options.map(({name,path},index)=>(
     <Link to={path} key={index}>
-        <Secondary size='14px' color='black'>{name}</Secondary>
+        <Text>{name}</Text>
     </Link>
 ));
 

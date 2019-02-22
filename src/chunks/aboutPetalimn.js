@@ -22,10 +22,9 @@ const StyledImg = styled(Img)`
     `}
 `;
 
-const TextPanel = styled.div`
+const Panel = styled.div`
     position: absolute;
     background-color: rgba(35,37,41,0.9);
-    
     width: 280px;
     right: 20px;
     top: 60px;
@@ -44,6 +43,15 @@ const TitleWrapper = styled.div`
     margin: auto;
 `;
 
+const Title = styled(Main)`
+    color: #DBC8BE;
+    padding: 30px 0 0 0;
+`;
+
+const Text = styled(Secondary)`
+    padding: 0 30px 30px 30px;
+    margin: 0;
+`;
 
 const AboutPetalimn = () => (
     <StaticQuery 
@@ -52,15 +60,15 @@ const AboutPetalimn = () => (
             <Section backgroundColor='#DAC6BD'>
                 <Container>
                     <StyledImg fluid={data.bg.childImageSharp.fluid}/>
-                    <TextPanel>
+                    <Panel>
                         <TitleWrapper>
-                            <Main color='#DBC8BE' padding='30px 0 0 0'>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Main>
+                            <Title>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
                         </TitleWrapper>
-                        <Secondary size='16px' color='#DDD' padding='0 30px 30px 30px' margin='0'>
+                        <Text contrast>
                             <span dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}} />
-                        </Secondary>
+                        </Text>
                         <Button contrast text='Get In Touch' margin='0 0 30px 0'/>
-                    </TextPanel>
+                    </Panel>
                 </Container>
             </Section>
         )}

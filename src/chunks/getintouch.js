@@ -38,19 +38,22 @@ const AbsolutePanel = styled.div`
     `}
 `;
 
-const Title = ({children, isLarge})=>{
-    return(
-        <Main size={isLarge?'30px':'20px'} color='#DAC6BD' margin='60px 0 30px 0'>
-            {children}
-        </Main>
-    );
-}
+const Title = styled(Main)`
+    color: #DBC8BE;
+    margin: 60px 0 30px 0;
+    font-size: 20px;
+    ${breakpoint('tablet')`
+        font-size: 30px;
+    `}
+`;
 
-const Text = ({children, isLarge})=>(
-    <Secondary  size={isLarge?'20px':'18px'} margin='0'>
-        {children}
-    </Secondary>
-);
+const Text = styled(Secondary)`
+    margin: 0;
+    font-size: 18px;
+    ${breakpoint('tablet')`
+        font-size: 20px;
+    `}
+`;
 
 const Space = styled.div`
     width: 100%;
@@ -72,27 +75,19 @@ const GetInTouch = ()=>(
 );
 
 const Panel = ({data})=>(
-    <Media>{
-        ({breakpoints, currentBreakpoint})=>{
-            const isLarge = breakpoints[currentBreakpoint] > breakpoints.mobileLandscape;
-            return(
-                <AbsolutePanel>
-                    <Title isLarge={isLarge}>
-                        Private / International workshops
-                    </Title>
-                    <Text isLarge={isLarge}>IN</Text>
-                    <Text isLarge={isLarge}>Beijing</Text>
-                    <Text isLarge={isLarge}>Taiwan</Text>
-                    <Text isLarge={isLarge}>other countries</Text>
-                    <Text isLarge={isLarge}>Looking forward to hearing from you</Text>
-                    <Space />
-                    <EmailLink><Text isLarge={isLarge}>{data.site.siteMetadata.email}</Text></EmailLink>
-                    
-                    <Button contrast text='Get In Touch' margin='auto'/>
-                </AbsolutePanel>
-            );
-        }
-    }</Media>
+    <AbsolutePanel>
+        <Title>
+            Private / International workshops
+        </Title>
+        <Text contrast>IN</Text>
+        <Text contrast>Beijing</Text>
+        <Text contrast>Taiwan</Text>
+        <Text contrast>other countries</Text>
+        <Text contrast>Looking forward to hearing from you</Text>
+        <Space />
+        <EmailLink><Text contrast>{data.site.siteMetadata.email}</Text></EmailLink>
+        <Button contrast text='Get In Touch' margin='auto'/>
+    </AbsolutePanel>
 );
 
 export default GetInTouch;

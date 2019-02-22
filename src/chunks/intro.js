@@ -11,24 +11,32 @@ const StyledImg = styled(Img)`
 `;
 
 const TextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     max-width: 700px;
-    margin: 30px;
+    margin: 30px 40px 40px 40px;
 `;
 
-const AlignCenter = styled.div`
-    box-sizing: border-box;
-    width: 70%;
-    max-width: 700px;
-    text-align: center;
-    margin: 0 30px
+const Text = styled(Main)`
+    align-self: center;
+    font-size: 20px;
+    line-height: 2em;
+    margin: 20px 0;
 `;
-const AlignRight = styled.div`
-    box-sizing: border-box;
-    max-width: 700px;
-    width: 70%;
-    text-align: right;
+
+const Slogan = styled(Main)`
+    align-self: center;
+    margin: 20px 30px;
+    font-size: 22px;
+    font-weight: 900px;
+    line-height: 2em;
+`;
+const Signature = styled(Main)`
+    align-self: flex-end;
     margin: 0 30px;
+    font-size: 22px;
+    font-weight: 900px;
 `;
 
 const Intro = ()=>(
@@ -38,20 +46,16 @@ const Intro = ()=>(
             <Section backgroundColor='#DAC6BD' padding='60px 0'>
                 <StyledImg fluid={data.logo.childImageSharp.fluid} />
                 <TextWrapper>
-                    <Main color='black' size='16px' lineHeight='2em'>
-                        {data.allMarkdownRemark.edges[0].node.excerpt}
-                    </Main>
+                <Text>
+                    {data.allMarkdownRemark.edges[0].node.excerpt}
+                </Text>
+                <Slogan>
+                    “ There are no established rules in piping flowers, just pip with your rhythm”.
+                </Slogan>
+                <Signature>
+                    Evelyn W.
+                </Signature>
                 </TextWrapper>
-                <AlignCenter>
-                    <Main color='black' size='20px' fontWeight='900' lineHeight='2em'>
-                        “ There are no established rules in piping flowers, just pip with your rhythm”.
-                    </Main>
-                </AlignCenter>
-                <AlignRight>
-                    <Main color='black' size='20px' fontWeight='900'>
-                        Evelyn W.
-                    </Main>
-                </AlignRight>
                 <Button text='Learn More'/>
             </Section>   
         )}

@@ -20,17 +20,26 @@ const AbsolutePanel = styled.div`
     text-align: center;
 `;
 
-const Title = ({children})=>(
-    <Main size='26px' color='#DAC6BD' padding='80px 0 0 0' margin='40px 0'>
-        {children}
-    </Main>
-)
+const Title = styled(Main)`
+    font-size: 26px;
+    color: #DBC8BE;
+    padding: 80px 0 0 0;
+    margin: 40px 0;
+`;
 
-const Subtitle = ({children})=>(
-    <Main size='18px' margin='5px 0'>
-        {children}
-    </Main>
-)
+const Subtitle = styled(Main)`
+    font-size: 18px;
+    margin: 5px 0;
+`;
+
+const Text = styled(Secondary)`
+    margin: 0;
+`;
+
+const Space = styled.div`
+    width: 100%;
+    height: 20px;
+`;
 
 
 const Booking = ()=>(
@@ -41,10 +50,11 @@ const Booking = ()=>(
                 <StyledImg fluid={data.bg.childImageSharp.fluid} />
                 <AbsolutePanel>
                     <Title>Online Booking Classes</Title>
-                    <Subtitle>Bean Paste Flower Cake</Subtitle>
-                    <Subtitle>Popsicle Cake pops</Subtitle>
-                    <Secondary>IN</Secondary>
-                    <Secondary margin='0'>Orange County, California</Secondary>
+                    <Subtitle contrast>Bean Paste Flower Cake</Subtitle>
+                    <Subtitle contrast>Popsicle Cake pops</Subtitle>
+                    <Space />
+                    <Text contrast>IN</Text>
+                    <Text contrast margin='0'>Orange County, California</Text>
                     <Button text='Learn More' contrast margin='50px auto'/>
                 </AbsolutePanel>
             </Section>   

@@ -1,10 +1,12 @@
 
 import React from 'react';
+import styled from 'styled-components';
 import { Main, Secondary } from './text';
 import { StaticQuery, graphql } from 'gatsby';
 import { Facebook, Instagram } from './socialLink';
 import Logo from './logo';
 import Section from './section';
+import EmailLink from '../components/emailLink';
 
 const Footer = ()=>(
     <footer>
@@ -24,31 +26,15 @@ const Footer = ()=>(
     </footer>
 );
 
-const Text = ({children})=>(
-    <Secondary 
-        size='16px'
-        display='block'
-    >
-        {children}
-    </Secondary>
-);
+const Text = styled(Secondary)`
+    display: block;
+`;
 
-const Title = ({children})=>(
-    <Main
-        size='22px'
-    >
-        {children}
-    </Main>
-);
+const Title = styled(Main)``;
 
-const Subtitle = ({children})=>(
-    <Secondary
-        size='16px'
-        padding='15px'
-    >
-        {children}
-    </Secondary>
-);
+const Subtitle = styled(Secondary)`
+    padding: 15px;
+`;
 
 const Content = ({data})=>{
     const {title, subtitle, email, location} = data.site.siteMetadata;
@@ -56,12 +42,14 @@ const Content = ({data})=>{
     return(
         <Section padding='40px 0 60px 0'>
             <div>
-                <Subtitle>{subtitle}</Subtitle>
-                <Title>{title}</Title>
+                <Subtitle contrast>{subtitle}</Subtitle>
+                <Title contrast>{title}</Title>
             </div>
             <Logo />
-            <Text>{email}</Text>
-            <Text>{location}</Text>
+            <EmailLink address={email}>
+                <Text contrast>{email}</Text>
+            </EmailLink>
+            <Text contrast>{location}</Text>
             <div>
                 <Facebook size='22px' padding='20px' />
                 <Instagram size='22px' padding='20px' />

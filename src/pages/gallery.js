@@ -8,11 +8,10 @@ import Section from "../components/section";
 import { Main } from "../components/text";
 import { Modal } from "@material-ui/core";
 
-const Title = ()=>(
-    <Main size='40px' color='#DBC8BE'>
-        Gallery
-    </Main>
-);
+const Title = styled(Main)`
+    font-size: 40px;
+    color: #DBC8BE;
+`;
 
 const Gallery =()=>(
     <StaticQuery 
@@ -25,7 +24,6 @@ const Image = styled(Img)`
     margin: 5px;
     width: 80px;
     height: 80px;
-    
     ${breakpoint('tablet')`
         margin: 20px;
         width: 250px;
@@ -79,7 +77,7 @@ const Content = ({data})=>(
     <div>
         <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
         <Section padding='30px 0 0 0'>
-            <Title />
+            <Title>Gallery</Title>
                 <CellWrapper>
                     {data.allFile.edges.map((edge,index)=>(
                         <Cell key={index} fluid={edge.node.childImageSharp.fluid} />

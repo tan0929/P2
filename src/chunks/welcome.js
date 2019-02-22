@@ -40,14 +40,30 @@ const Welcome = ()=>(
     />
 );
 
+const Title = styled(Main)`
+    color: #DBC8BE;
+    margin: 100px 0 0 0;
+    font-size: 55px;
+    ${breakpoint('tablet')`
+        font-size: 80px;
+    `}
+`;
+
+const Subtitle = styled(Secondary)`
+    font-size: 18px;
+    ${breakpoint('tablet')`
+        font-size: 20px;
+    `}
+`;
+
 const Panel = ({data})=>(
     <Media>{
         ({breakpoints, currentBreakpoint})=>{
             const large = breakpoints[currentBreakpoint] > breakpoints.mobileLandscape;
             return(
                 <AbsolutePanel>
-                    <Main size={large?'80px':'55px'} color='#DAC6BD' margin='100px 0 0 0'>{data.site.siteMetadata.title}</Main>
-                    <Secondary size={large?'20px':'18px'}>{data.site.siteMetadata.slogan}</Secondary>
+                    <Title>{data.site.siteMetadata.title}</Title>
+                    <Subtitle contrast>{data.site.siteMetadata.slogan}</Subtitle>
                 </AbsolutePanel>
             );
         }

@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-const EmailLink = props=>(
-    <div onClick={e=>sendTo(props.address)} style={{cursor: 'pointer'}}>
-        {props.children}
+const EmailLink = ({address, children})=>(
+    <div onClick={e=>sendTo(address)} style={{cursor: 'pointer'}}>
+        {children}
     </div>
 );
 

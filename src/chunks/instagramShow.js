@@ -10,9 +10,14 @@ const Wrapper = styled.div`
     margin: 20px auto 20px auto;
 `;
 
+const Title = styled(Main)`
+    color: #DBC8BE;
+    font-size: 26px;
+`;
+
 const InstagramShow = ()=>(
     <Section backgroundColor='#26282d' padding='30px 0'>
-        <Main color='#DBC8BE' size='26px'>Instagram</Main>
+        <Title>Instagram</Title>
         <Wrapper>
             <SnapWidget />
         </Wrapper>

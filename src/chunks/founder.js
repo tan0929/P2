@@ -12,22 +12,25 @@ const StyledImg = styled(Img)`
     height: 300px;
 `;
 
-const Title = ({children})=>(
-    <Main color='#DBC8BE' size='40px'>
-        {children}
-    </Main>
-)
+const Title = styled(Main)`
+    color: #DBC8BE;
+    font-size: 40px;
+`;
 
-const Subtitle = ({children})=>(
-    <Main color='#DBC8BE' size='18px'>
-        {children}
-    </Main>
-)
+const Subtitle = styled(Main)`
+    color: #DBC8BE;
+    font-size: 18px;
+`;
+
+const Text = styled(Secondary)`
+    padding: 0 30px 30px 30px;
+    margin: 0;
+`;
 
 const Content = ({data})=>(
-    <Secondary size='16px' color='#DDD' padding='0 30px 30px 30px' margin='0'>
+    <Text contrast>
         <span dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}} />
-    </Secondary>
+    </Text>
 );
 
 const Wrapper = styled.div`

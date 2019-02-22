@@ -40,10 +40,14 @@ const NavWrapper = styled.div`
     margin: 0 20px;
 `;
 
+const Text = styled(Secondary)`
+    font-size: 15px;
+`;
+
 const BasicOptions = options.map(({name,path},index)=>(
     <ItemWrapper key={index}>
-        <Link to={path} key={index} color='#DDD'>
-            <Secondary size='15px'>{name}</Secondary>
+        <Link to={path} key={index} >
+            <Text contrast>{name}</Text>
         </Link>
     </ItemWrapper>
 ));

@@ -56,26 +56,19 @@ const ImgWrapper = styled.div`
     `}
 `;
 
-const Title =({children})=>(
-    <Main size='40px' color='#DAC6BD' margin='20px 40px'>
-        {children}
-    </Main>
-);
+const Title = styled(Main)`
+    font-size: 40px;
+    color: #DBC8BE;
+    margin: 20px 40px;
+`;
 
-const StyledSecondary = styled(Secondary)`
+const Text = styled(Secondary)`
+    font-size: 18px;
     margin: 20px 40px;
     ${breakpoint('tablet')`
         margin: 20px 80px;
     `}
 `;
-
-const Text =({children})=>(
-    <StyledSecondary size='18px' color='#DDD'>
-        {children}
-    </StyledSecondary>
-);
-
-
 
 const Content=({data})=>(
     <Container>
@@ -84,8 +77,8 @@ const Content=({data})=>(
         </ImgWrapper>
         <FormWrapper>
             <Title>One of a kind cakes just for you.</Title>
-            <Text>Hi there,</Text>
-            <Text>We are glad to see you here. Thanks for visiting. If you have any questions for classes, international workshops, special events, or any ideas you would like to share with us, please feel free to fill out the form below or contact us directly via e-mailI. We would love to hear from you.</Text>
+            <Text contrast>Hi there,</Text>
+            <Text contrast>We are glad to see you here. Thanks for visiting. If you have any questions for classes, international workshops, special events, or any ideas you would like to share with us, please feel free to fill out the form below or contact us directly via e-mailI. We would love to hear from you.</Text>
             <Form/>
         </FormWrapper>
     </Container>
@@ -105,7 +98,6 @@ const query = graphql`
     site{
         siteMetadata{
             title
-            slogan
         }
     }
   }

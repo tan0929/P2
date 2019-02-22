@@ -20,25 +20,27 @@ const TitleWrapper = styled.div`
   padding: 30px 40px;
 `;
 
-const Title = ({children})=>(
-  <Main margin='auto'>{children}</Main>
-);
+const Title = styled(Main)`
+  margin: auto;
+  font-size: 30px;
+`;
 
-const Subtitle = ({children})=>(
-  <Secondary padding='0 15px 0 0' margin='auto'>{children}</Secondary>
-);
+const Subtitle = styled(Secondary)`
+  padding: 0 15px 0 0;
+  margin: auto;
+`;
 
 const Header = ({ siteTitle, siteSubtitle }) => (
   <StyledHeader>
     <TitleWrapper>
-      <Subtitle>
+      <Subtitle contrast>
         {siteSubtitle}
       </Subtitle>
-      <Title>
-        <Link to='/' color='#DDD'>
+      <Link to='/'>
+        <Title contrast>
           {siteTitle}
-        </Link>
-      </Title>
+        </Title>
+      </Link>
     </TitleWrapper>
     <Media>
     {({breakpoints, currentBreakpoint})=>(
