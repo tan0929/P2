@@ -15,7 +15,7 @@ const StyledForm = styled.form`
 
 const Form = ({width})=>{
     return(
-        <StyledForm width={width} name="contact" method="post" netlify>
+        <StyledForm width={width} name="contact" method="post" data-netlify="true">
             <Input type='text' label='Name' name='name' required/>
             <Input type='email' label='Email' name='email' required />
             <Input type='text' label='Subject' name='subject' required />
