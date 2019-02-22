@@ -15,13 +15,17 @@ const Title = styled(Main)`
     font-size: 26px;
 `;
 
+const Background = styled(Section)`
+    padding: 30px 0;
+`;
+
 const InstagramShow = ()=>(
-    <Section backgroundColor='#26282d' padding='30px 0'>
+    <Background>
         <Title>Instagram</Title>
         <Wrapper>
             <SnapWidget />
         </Wrapper>
-    </Section>
+    </Background>
 );
 
 export default InstagramShow;

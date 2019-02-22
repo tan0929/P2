@@ -59,16 +59,21 @@ const Space = styled.div`
     height: 20px;
 `;
 
+const Background = styled(Section)`
+    background-color: rgba(0,0,0,0);
+    height: 500px;
+`;
+
 const GetInTouch = ()=>(
     <StaticQuery
         query={query}
         render={data=>(
-            <Section backgroundColor='rgba(0,0,0,0)' height='500px'>
+            <Background>
                 <Fixed>
                     <StyledImg fluid={data.bg.childImageSharp.fluid} />
                 </Fixed>
                 <Panel data={data}/>
-            </Section>   
+            </Background>   
         )}
     />
 );

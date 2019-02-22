@@ -47,7 +47,7 @@ const LargeImageWrapper = styled.div`
 const Cell = ({fluid})=>{
     const [enable,setEnable] = useState(false);
     return(
-        <div >
+        <div>
             <div onClick={()=> setEnable(true)}>
                 <Image fluid={fluid} />
             </div>
@@ -73,17 +73,21 @@ const CellWrapper = styled.div`
     padding: 0 0 60px 0;
 `;
 
+const Background = styled(Section)`
+    padding: 30px 0 0 0;
+`;
+
 const Content = ({data})=>(
     <div>
         <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
-        <Section padding='30px 0 0 0'>
+        <Background>
             <Title>Gallery</Title>
                 <CellWrapper>
                     {data.allFile.edges.map((edge,index)=>(
                         <Cell key={index} fluid={edge.node.childImageSharp.fluid} />
                     ))}
                 </CellWrapper>
-        </Section>
+        </Background>
     </div>
 );
 

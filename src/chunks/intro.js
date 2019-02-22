@@ -39,11 +39,16 @@ const Signature = styled(Main)`
     font-weight: 900px;
 `;
 
+const Background = styled(Section)`
+  background-color: #DAC6BD;
+  padding: 60px 0;
+`;
+
 const Intro = ()=>(
     <StaticQuery
         query={query}
         render={data=>(
-            <Section backgroundColor='#DAC6BD' padding='60px 0'>
+            <Background>
                 <StyledImg fluid={data.logo.childImageSharp.fluid} />
                 <TextWrapper>
                 <Text>
@@ -57,7 +62,7 @@ const Intro = ()=>(
                 </Signature>
                 </TextWrapper>
                 <Button text='Learn More'/>
-            </Section>   
+            </Background>   
         )}
     />
 );

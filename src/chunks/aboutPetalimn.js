@@ -53,11 +53,15 @@ const Text = styled(Secondary)`
     margin: 0;
 `;
 
+const Background = styled(Section)`
+    background-color: #DAC6BD;
+`;
+
 const AboutPetalimn = () => (
     <StaticQuery 
         query={query}
         render={data=>(
-            <Section backgroundColor='#DAC6BD'>
+            <Background>
                 <Container>
                     <StyledImg fluid={data.bg.childImageSharp.fluid}/>
                     <Panel>
@@ -70,7 +74,7 @@ const AboutPetalimn = () => (
                         <Button contrast text='Get In Touch' margin='0 0 30px 0'/>
                     </Panel>
                 </Container>
-            </Section>
+            </Background>
         )}
     />
 )

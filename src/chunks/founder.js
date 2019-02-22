@@ -47,7 +47,7 @@ const Founder = () => (
     <StaticQuery 
         query={query}
         render={data=>(
-            <Section backgroundColor='#2A2C30'>
+            <Section>
                 <Wrapper>
                     <StyledImg fluid={data.portrait.childImageSharp.fluid} />
                     <Title>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
