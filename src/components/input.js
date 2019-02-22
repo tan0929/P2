@@ -101,15 +101,15 @@ const Wrapper = styled.div`
     ${({width})=>width? `max-width: ${width};` : ''}
 `;
 
-const Input = ({type, label, required, width})=>(
+const Input = ({type, label, required, width, ...props})=>(
     <Wrapper width={width}>
-        <StyledInput type={type}  placeholder="&nbsp;" required={required} />
+        <StyledInput type={type}  placeholder="&nbsp;" required={required} {...props}/>
         <Label>{label}</Label>
         <Border />
     </Wrapper>
 );
 
-const Textarea = ({label, required, cols, rows, maxLength, width})=>(
+const Textarea = ({label, required, cols, rows, maxLength, width, ...props})=>(
     <Wrapper width={width}>
         <StyledTextarea
             maxLength={maxLength}
@@ -117,6 +117,7 @@ const Textarea = ({label, required, cols, rows, maxLength, width})=>(
             rows={rows} 
             placeholder="&nbsp;" 
             required={required}
+            {...props}
         />
         <Label>{label}</Label>
         <Border />

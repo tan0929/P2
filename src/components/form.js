@@ -15,15 +15,15 @@ const StyledForm = styled.form`
 
 const Form = ({width})=>{
     return(
-        <StyledForm width={width} name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <StyledForm width={width} name="contact" method="POST" netlify-honeypot="bot-field" netlify>
             <input type="hidden" name="form-name" value="contact" />
             <Hidden>
                 <input name="bot-field" />
             </Hidden>
-            <Input type='text' label='Name' required/>
-            <Input type='email' label='Email' required />
-            <Input type='text' label='Subject' required />
-            <Textarea cols='50' rows='5' label='Message' maxLength='255' required />
+            <Input type='text' label='Name' name='name' required/>
+            <Input type='email' label='Email' name='email' required />
+            <Input type='text' label='Subject' name='subject' required />
+            <Textarea cols='50' rows='5' label='Message' maxLength='255' name='message' required />
             <StyledButton contrast text='Submit' type='submit'/>
         </StyledForm>
     );
