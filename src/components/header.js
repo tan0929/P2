@@ -45,7 +45,7 @@ const Header = ({ siteTitle, siteSubtitle }) => (
       </Link>
     </TitleWrapper>
     <ReactResizeDetector handleWidth>
-      {(width)=>width > 720? <Nav />: <MobileNav />}
+      {(width)=> width ? width > 720 ? <Nav />: <MobileNav /> : <div />}
     </ReactResizeDetector>
   </StyledHeader>
 )
