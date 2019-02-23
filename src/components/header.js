@@ -6,6 +6,7 @@ import Link from './betterLink';
 import ReactResizeDetector from 'react-resize-detector';
 import { Main, Secondary } from './text';
 
+const bp = 768;
 
 const StyledHeader = styled.header`
   position: sticky;
@@ -45,7 +46,7 @@ const Header = ({ siteTitle, siteSubtitle }) => (
       </Link>
     </TitleWrapper>
     <ReactResizeDetector handleWidth>
-      {(width)=> width ? width > 720 ? <Nav />: <MobileNav /> : <div />}
+      {(width)=> width ? width > bp ? <Nav />: <MobileNav /> : <div />}
     </ReactResizeDetector>
   </StyledHeader>
 )

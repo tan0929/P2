@@ -1,4 +1,5 @@
 ---
+type: page
 title: Meet Evelyn W.
 slogan: “ There are no established rules in piping flowers, just pip with your rhythm”.
 ---
