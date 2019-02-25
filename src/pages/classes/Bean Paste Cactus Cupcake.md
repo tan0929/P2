@@ -1,5 +1,6 @@
 ---
 type: class
+templateKey: class
 id: 0
 title: Bean Paste Cactus Cupcake
 subtitle: this is subtitle
@@ -10,6 +11,10 @@ description:
   - This is a one day, hands-on class, covers various techniques and the fundamentals to creating your Cactus Cupcakes. You will also learn how to make perfect bean paste for piping and design your own cake with gorgeous arrangement.
   - You will be able to take your own decorated 4 cupcakes home to share with friends and family. Cupcakes are prepared in advance so that you can focus on piping techniques.
 bookingUrl: https://calendly.com/petalimn/bean-paste-cactuscupcake
+keywords: 
+  - cake
+  - design
+  - petalimn
 ---
 
 #### Information

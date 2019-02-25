@@ -1,5 +1,6 @@
 ---
 type: class
+templateKey: class
 id: 1
 title: Bean Paste Floral Cupcake
 subtitle: this is subtitle
@@ -11,6 +12,10 @@ description:
   - You will be able to take your own decorated 4 cupcakes home to share with friends and family. Cupcakes are prepared in advance so that you can focus on piping techniques.
   - "*Flowers may vary each class."
 bookingUrl: https://calendly.com/petalimn/bean-paste-cactuscupcake
+keywords: 
+  - cake
+  - design
+  - petalimn
 ---
 
 #### Information

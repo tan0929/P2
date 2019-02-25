@@ -1,13 +1,12 @@
 import React from "react"
-import SEO from "../components/seo"
-import Section from '../components/section'
+import SEO from "../../components/seo"
+import Section from '../../components/section'
 import styled from 'styled-components';
-import { Main, Secondary } from '../components/text';
+import { Main, Secondary } from '../../components/text';
 import { StaticQuery, graphql } from "gatsby";
-import Card from '../components/card';
+import Card from '../../components/card';
 import ReactResizeDetector from 'react-resize-detector';
 import breakpoint from 'styled-components-breakpoint';
-import { TableFooter } from "@material-ui/core";
 
 const Background = styled(Section)`
     background-color: #DBC8BE;

@@ -94,8 +94,6 @@ const Large = ({title, subtitle, fluid})=>{
     );
 }
 
-
-
 const Card =({large, ...props})=>(
     large ? <Large {...props}/> : <Small {...props}/>            
 )
