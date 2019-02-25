@@ -21,10 +21,10 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       # - label: "Description"
       #   name: "description"
-      #   widget: object
+      #   widget: "object"
       #   fields: 
       #     - {label: "Text", name: "text", widget: "text"}
-      # - {label: "Cover Image", name: "coverImage", widget: "image"}
-      # - {label: "Page Image", name: "pageImage", widget: "image"}
-      # - {label: "Body", name: "body", widget: "markdown"}
-      # - {label: "Keywords", name: "keywords", widget: "list", default: ["cake", "design", "petalimn"]}
+      - {label: "Cover Image", name: "coverImage", widget: "image"}
+      - {label: "Page Image", name: "pageImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Keywords", name: "keywords", widget: "list", default: ["cake", "design", "petalimn"]}
