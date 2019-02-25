@@ -31,7 +31,6 @@ exports.createPages = ({graphql, actions})=>{
       }
   }`).then(res=>{
       if(res.errors){
-          console.log("nonononono");
           return Promise.reject(res.errors);
       }
       const posts = res.data.allMarkdownRemark.edges;
