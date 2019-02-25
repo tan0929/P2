@@ -6,15 +6,15 @@ const StyledButton = styled.button`
     width: 130px;
     background-color: rgba(0,0,0,0);
     border-radius: 5px;
-    border: 1px solid ${({contrast})=>contrast? `#DAC6BD` : `#232529`};
+    border: 1px solid ${({contrast})=>contrast? `#DBC8BE` : `#232529`};
     font-family: Nunito-Light;
     font-size: 15px;
-    color: ${({contrast})=>contrast? `#DAC6BD` : `#232529`};
+    color: ${({contrast})=>contrast? `#DBC8BE` : `#232529`};
     outline: none;
     transition: 0.3s;
     :hover{
-        background-color: ${({contrast})=>contrast? `#DAC6BD` : `#232529`};
-        color: ${({contrast})=>contrast? `#232529` : `#DAC6BD`};
+        background-color: ${({contrast})=>contrast? `#DBC8BE` : `#232529`};
+        color: ${({contrast})=>contrast? `#232529` : `#DBC8BE`};
     }
     ${({margin})=> margin? `margin: ${margin}` : ``}
 `;

@@ -3,14 +3,26 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Main } from './text';
 
-
-
-const Title = styled(Main)`
-
+const SmallTitle = styled(Main)`
+    font-size: 16px;
+    color: #DBC8BE;
+    margin: 5px 15px;
 `;
 
-const Subtitle = styled(Main)`
+const SmallSubtitle = styled(Main)`
+    font-size: 16px;
+    margin: 5px 15px;
+`;
 
+const SmallTextWrapper = styled.div`
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #232529;
+    width: 180px;
+    height: 100px;
 `;
 
 const SmallImg= styled(Img)`
@@ -19,6 +31,8 @@ const SmallImg= styled(Img)`
 `;
 
 const SmallWrapper = styled.div`
+    padding: 5px 0;
+    display: flex;
     width: 300px;
     height: 100px;
 `;
@@ -26,22 +40,56 @@ const SmallWrapper = styled.div`
 const Small = ({title, subtitle, fluid})=>{
     return(
         <SmallWrapper>
-            {title}{subtitle}
             <SmallImg fluid={fluid}/>
+            <SmallTextWrapper>
+                <SmallTitle>{title}</SmallTitle>
+                <SmallSubtitle contrast>{subtitle}</SmallSubtitle>
+            </SmallTextWrapper>
         </SmallWrapper>
     );
 }
 
-const LargeWrapper = styled.div`
+const LargeTitle = styled(Main)`
+    font-size: 22px;
+    color: #DBC8BE;
+    margin: 5px 15px;
+`;
+
+const LargeSubtitle = styled(Main)`
+    font-size: 22px;
+    margin: 5px 15px;
+`;
+
+const LargeTextWrapper = styled.div`
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #232529;
+    width: 300px;
+    height: 270px;
+`;
+
+const LargeImg= styled(Img)`
     width: 300px;
     height: 180px;
+`;
+
+const LargeWrapper = styled.div`
+    padding: 15px;
+    width: 300px;
+    height: 450px;
 `;
 
 const Large = ({title, subtitle, fluid})=>{
     return(
         <LargeWrapper>
-            LargeTest
-            <Img fluid={fluid}/>
+            <LargeImg fluid={fluid}/>
+            <LargeTextWrapper>
+                <LargeTitle>{title}</LargeTitle>
+                <LargeSubtitle contrast>{subtitle}</LargeSubtitle>
+            </LargeTextWrapper>
         </LargeWrapper>
     );
 }

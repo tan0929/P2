@@ -54,7 +54,7 @@ const Text = styled(Secondary)`
 `;
 
 const Background = styled(Section)`
-    background-color: #DAC6BD;
+    background-color: #DBC8BE;
 `;
 
 const AboutPetalimn = () => (

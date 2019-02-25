@@ -6,6 +6,8 @@ import { Main, Secondary } from '../components/text';
 import { StaticQuery, graphql } from "gatsby";
 import Card from '../components/card';
 import ReactResizeDetector from 'react-resize-detector';
+import breakpoint from 'styled-components-breakpoint';
+import { TableFooter } from "@material-ui/core";
 
 const Background = styled(Section)`
     background-color: #DBC8BE;
@@ -34,7 +36,11 @@ const Classes = ()=>(
 );
 
 const ClassWrapper = styled.div`
-
+    ${breakpoint('tablet')`
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    `}
 `;
 
 const PageTextWrapper = styled.div`
