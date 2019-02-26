@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClassTemplate } from '../templates/class';
+import { ClassTemplate } from '../../templates/class';
 
 const ClassPreview = ({ entry, widgetFor, widgetsFor, getAsset })=>{
     
