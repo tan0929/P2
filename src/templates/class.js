@@ -101,15 +101,20 @@ const CalendlyWrapper = styled.div`
     max-width: 1080px
 `;
 
-const Class = ({data})=>{
-    const { title, subtitle, image, description, bookingUrl } = data.markdownRemark.frontmatter;
-    const { fluid } = image.childImageSharp;
-    const { html } = data.markdownRemark;
+export const ClassTemplate = ({
+    title,
+    subtitle,
+    fluid,
+    description,
+    bookingUrl,
+    keywords,
+    html
+})=>{
     const [enable,setEnable] = useState(false);
     return(
         <Background>
             {/* keywords need to set up from frontmatter */}
-            <SEO title={title} keywords={[`petalimn`, `cake`, `design`]} />
+            <SEO title={title} keywords={keywords} />
             <UpperWraper>
                 <ImgWrapper>
                     <StyledImg fluid={fluid} />
@@ -144,6 +149,23 @@ const Class = ({data})=>{
     );
 }
 
+const Class = ({data})=>{
+    const { title, subtitle, image, description, bookingUrl, keywords } = data.markdownRemark.frontmatter;
+    const { fluid } = image.childImageSharp;
+    const { html } = data.markdownRemark;
+    return(
+        <ClassTemplate 
+            title={title}
+            subtitle={subtitle}
+            fluid={fluid}
+            description={description}
+            bookingUrl={bookingUrl}
+            keywords={keywords}
+            html={html}
+        />
+    );
+}
+
 export default Class;
 
 export const query=graphql`
@@ -161,6 +183,7 @@ export const query=graphql`
                 subtitle
                 description
                 bookingUrl
+                keywords
             }
             html
         }
