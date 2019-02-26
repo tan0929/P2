@@ -6,7 +6,7 @@ import Img from "gatsby-image";
 import { graphql, StaticQuery } from 'gatsby';
 import Section from "../components/section";
 import { Main } from "../components/text";
-import { Modal } from "@material-ui/core";
+import Modal from "@material-ui/core/Modal";
 
 const Title = styled(Main)`
     font-size: 40px;

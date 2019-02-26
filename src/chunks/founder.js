@@ -24,6 +24,7 @@ const Subtitle = styled(Main)`
 
 const Text = styled(Secondary)`
     padding: 0 30px 30px 30px;
+    line-height: 1.6em;
     margin: 0;
 `;
 

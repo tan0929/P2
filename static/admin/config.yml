@@ -19,13 +19,14 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "TemplateKey", name: "templateKey", widget: "hidden", default: "class"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
       - {label: "Booking Url", name: "bookingUrl", widget: "string"}
       - label: "Description"
         name: "description"
         widget: "list"
         allow_add: true
         field: {label: "Text", name: "text", widget: "text"}
-      - {label: "Cover Image", name: "coverImage", widget: "image"}
-      - {label: "Page Image", name: "pageImage", widget: "image"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Keywords", name: "keywords", widget: "list", default: ["cake", "design", "petalimn"]}

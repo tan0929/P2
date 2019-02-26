@@ -99,7 +99,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Discover Petalimn`,
+        name: `Petalimn`,
         short_name: `Petalimn`,
         start_url: `/`,
         background_color: `#DAC6BD`,

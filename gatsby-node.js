@@ -8,6 +8,7 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const _ = require('lodash')
 
 exports.createPages = ({graphql, actions})=>{
   const { createPage } = actions;
@@ -24,7 +25,6 @@ exports.createPages = ({graphql, actions})=>{
                   frontmatter{
                       templateKey
                   }
-                  html
                   id
               }
           }
@@ -36,8 +36,9 @@ exports.createPages = ({graphql, actions})=>{
       const posts = res.data.allMarkdownRemark.edges;
       posts.forEach(({node})=>{
           const id = node.id;
+          const classPath = `/classes/${_.kebabCase(node.fields.slug)}/`;
           createPage({
-              path: node.fields.slug,
+              path: classPath,
               component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),
               context: {
                   id,

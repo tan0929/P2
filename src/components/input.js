@@ -7,7 +7,7 @@ const Border = styled.span`
     left: 0;
     height: 2px;
     width: inherit;
-    background-color: #DAC6BD;
+    background-color: #DBC8BE;
     transform: scaleX(0);
     transform-origin: 0 0;
     transition: all .5s ease;
@@ -49,7 +49,7 @@ const StyledInput = styled.input`
         background: none;
         outline: none;
         + span{
-            color #DAC6BD;
+            color #DBC8BE;
             transform: translateY(-26px) translateX(-5px) scale(.80);
             + span{
                 transform: scaleX(1);
@@ -85,7 +85,7 @@ const StyledTextarea = styled.textarea`
         background: none;
         outline: none;
         + span{
-            color #DAC6BD;
+            color #DBC8BE;
             transform: translateY(-30px) translateX(-5px) scale(.80);
             + span{
                 transform: scaleX(1);

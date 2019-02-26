@@ -14,11 +14,11 @@ const Container = styled.div`
 const StyledImg = styled(Img)`
     margin: 40px 20px 60px 20px;
     width: 300px;
-    height: 1130px;
+    height: 1300px;
     ${breakpoint('tablet')`
         margin: 50px 40px;
         width: 500px;
-        height: 700px;
+        height: 800px;
     `}
 `;
 
@@ -51,6 +51,7 @@ const Title = styled(Main)`
 const Text = styled(Secondary)`
     padding: 0 30px 30px 30px;
     margin: 0;
+    line-height: 1.6em;
 `;
 
 const Background = styled(Section)`
