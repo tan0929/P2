@@ -72,7 +72,7 @@ const Title = styled(Main)`
 `;
 
 const Subtitle = styled(Main)`
-    font-size: 30px;
+    font-size: 26px;
     margin: 10px 40px;
     ${breakpoint('tablet')`
         margin: 20px 80px;
