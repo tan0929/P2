@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
-import Section from '../components/section';
 import Img from 'gatsby-image';
 import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary } from '../components/text';
 import SEO from '../components/seo';
 import Button from '../components/button';
-import Link from '../components/betterLink';
 import Calendly from '../components/calendly';
 import Modal from "@material-ui/core/Modal";
 
