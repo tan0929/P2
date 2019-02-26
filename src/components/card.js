@@ -68,7 +68,7 @@ const LargeTextWrapper = styled.div`
     justify-content: center;
     background-color: #232529;
     width: 300px;
-    height: 270px;
+    height: 220px;
 `;
 
 const LargeImg= styled(Img)`
