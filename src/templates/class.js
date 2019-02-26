@@ -63,6 +63,7 @@ const ImgWrapper = styled.div`
 
 const Title = styled(Main)`
     font-size: 30px;
+    width: 100%;
     color: #DBC8BE;
     margin: 20px 40px;
     ${breakpoint('tablet')`
