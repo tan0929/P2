@@ -9,7 +9,9 @@ import Logo from './logo';
 import Section from './section';
 import EmailLink from '../components/emailLink';
 
-
+const Background = styled(Section)`
+    padding: 40px 0 60px 0;
+`;
 
 const Text = styled(Secondary)`
     display: block;
@@ -25,7 +27,7 @@ const Content = ({data})=>{
     const {title, subtitle, email, location} = data.site.siteMetadata;
 
     return(
-        <Section padding='40px 0 60px 0'>
+        <Background>
             <div>
                 <Subtitle contrast>{subtitle}</Subtitle>
                 <Title contrast>{title}</Title>
@@ -41,7 +43,7 @@ const Content = ({data})=>{
             </div>
             <Text contrast>© {new Date().getFullYear()} by {title}</Text>
             
-        </Section>
+        </Background>
     )
 };
 
