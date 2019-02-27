@@ -5,6 +5,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from "gatsby-image";
 import { Main } from '../components/text';
 import Button from '../components/button';
+import Link from '../components/betterLink';
 
 const StyledImg = styled(Img)`
     width: 200px;
@@ -61,7 +62,9 @@ const Intro = ()=>(
                     {data.about.edges[0].node.frontmatter.founder}
                 </Signature>
                 </TextWrapper>
-                <Button text='Learn More'/>
+                <Link to='/about'>
+                  <Button text='Learn More'/>
+                </Link>
             </Background>   
         )}
     />

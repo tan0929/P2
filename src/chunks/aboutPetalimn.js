@@ -6,6 +6,7 @@ import Section from '../components/section';
 import breakpoint from 'styled-components-breakpoint';
 import { Secondary, Main } from "../components/text";
 import Button from '../components/button';
+import Link from '../components/betterLink';
 
 const Container = styled.div`
     width: 100%;
@@ -72,7 +73,9 @@ const AboutPetalimn = () => (
                         <Text contrast>
                             <span dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}} />
                         </Text>
-                        <Button contrast text='Get In Touch' margin='0 0 30px 0'/>
+                        <Link to='/contact'>
+                            <Button contrast text='Get In Touch' margin='0 0 30px 0'/>
+                        </Link>
                     </Panel>
                 </Container>
             </Background>

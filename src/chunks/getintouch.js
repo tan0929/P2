@@ -7,6 +7,7 @@ import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary } from '../components/text';
 import Button from '../components/button';
 import EmailLink from '../components/emailLink';
+import Link from '../components/betterLink';
 
 const StyledImg = styled(Img)`
     width: 100%;
@@ -90,7 +91,9 @@ const Panel = ({data})=>(
         <Text contrast>Looking forward to hearing from you</Text>
         <Space />
         <EmailLink><Text contrast>{data.site.siteMetadata.email}</Text></EmailLink>
-        <Button contrast text='Get In Touch' margin='auto'/>
+        <Link to='/contact'>
+            <Button contrast text='Get In Touch' margin='30px auto'/>
+        </Link>
     </AbsolutePanel>
 );
 

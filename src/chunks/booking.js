@@ -5,6 +5,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from "gatsby-image";
 import { Main, Secondary } from '../components/text';
 import Button from '../components/button';
+import Link from '../components/betterLink';
 
 const StyledImg = styled(Img)`
     width: 100%;
@@ -55,7 +56,9 @@ const Booking = ()=>(
                     <Space />
                     <Text contrast>IN</Text>
                     <Text contrast margin='0'>Orange County, California</Text>
-                    <Button text='Learn More' contrast margin='50px auto'/>
+                    <Link to='/classes'>
+                        <Button text='Learn More' contrast margin='50px auto'/>
+                    </Link>
                 </AbsolutePanel>
             </Section>   
         )}

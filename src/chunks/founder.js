@@ -5,6 +5,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Section from '../components/section';
 import { Secondary, Main } from "../components/text";
 import Button from '../components/button';
+import Link from '../components/betterLink';
 
 const StyledImg = styled(Img)`
     border-radius: 150px;
@@ -54,7 +55,9 @@ const Founder = () => (
                     <Title>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
                     <Subtitle>{data.allMarkdownRemark.edges[0].node.frontmatter.slogan}</Subtitle>
                     <Content data={data}/>
-                    <Button contrast text='Get In Touch'/>
+                    <Link to='/contact'>
+                      <Button contrast text='Get In Touch'/>
+                    </Link>
                 </Wrapper>
             </Section>
         )}
