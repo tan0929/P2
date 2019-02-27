@@ -19,7 +19,13 @@ const BFInput = styled.input`
 
 const Form = ()=>{
     return(
-        <StyledForm name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
+        <StyledForm 
+            name="contact" 
+            method="post" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field"
+            action='/page/success'
+        >
             <input type="hidden" name="form-name" value="contact" />
             <BFInput name="bot-field" />
             <Input type='text' label='Name' name='name' required/>
