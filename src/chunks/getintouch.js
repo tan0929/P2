@@ -16,10 +16,10 @@ const StyledImg = styled(Img)`
 const Fixed = styled.div`
     position: fixed;
     z-index: -1;
-    top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
+    height: 100vh;
+    width: 100vw;
 `;
 
 const AbsolutePanel = styled.div`
