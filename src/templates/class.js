@@ -34,9 +34,6 @@ const LowerWrapper = styled.div`
         font-size: 22px;
         font-weight: 200;
     }
-    ul {
-
-    }
 `;
 
 const TitleWrapper = styled.div`
@@ -48,7 +45,7 @@ const TitleWrapper = styled.div`
 
 const ImgWrapper = styled.div`
     width: 100%;
-    height: 100px;
+    height: 300px;
     ${breakpoint('tablet')`
         width: 60%;
         height: inherit;
@@ -57,7 +54,7 @@ const ImgWrapper = styled.div`
 `;
 
 const Title = styled(Main)`
-    flex: 1;
+    display: block;
     font-size: 30px;
     color: #DBC8BE;
     margin: 20px 40px;
