@@ -24,7 +24,7 @@ const Form = ()=>{
             method="post" 
             data-netlify="true" 
             netlify-honeypot="bot-field"
-            action='/page/success'
+            action='/success'
         >
             <input type="hidden" name="form-name" value="contact" />
             <BFInput name="bot-field" />
