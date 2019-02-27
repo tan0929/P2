@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary } from '../components/text';
 import SEO from '../components/seo';
 import Button from '../components/button';
 import Calendly from '../components/calendly';
 import Modal from "@material-ui/core/Modal";
+import PreviewCompatibleImage from '../components/previewCompatibleImage';
 
 //TODO need to connect button with calendly
 
@@ -44,11 +44,6 @@ const TitleWrapper = styled.div`
     ${breakpoint('tablet')`
         flex-grow: 1;
     `}
-`;
-
-const StyledImg = styled(Img)`
-    width: 100%;
-    height: 100%;
 `;
 
 const ImgWrapper = styled.div`
@@ -88,7 +83,7 @@ const Text = styled(Secondary)`
     `}
 `;
 
-const BookingButton = styled(Button)`
+const StyledButton = styled(Button)`
     margin: 20px 40px;
     ${breakpoint('tablet')`
         margin: 20px 80px;
@@ -96,28 +91,52 @@ const BookingButton = styled(Button)`
     display: block;
 `;
 
+const BookingButton = ({bookingUrl})=>{
+    const [enable,setEnable] = useState(false);
+    return(
+        <div>
+            <StyledButton 
+                contrast 
+                text="Booking" 
+                onClick={()=>setEnable(true)}
+            />
+            <Modal
+                open={enable}
+                onClose={()=>setEnable(false)}
+            >
+                <CalendlyWrapper>
+                    <Calendly url={bookingUrl} />
+                </CalendlyWrapper>
+            </Modal>
+        </div>
+    );
+}
+
 const CalendlyWrapper = styled.div`
     margin: 110px auto;
     max-width: 1080px
 `;
 
 export const ClassTemplate = ({
+    preview,
     title,
     subtitle,
-    fluid,
+    image,
     description,
     bookingUrl,
     keywords,
-    html
+    body
 })=>{
-    const [enable,setEnable] = useState(false);
+    
     return(
         <Background>
             {/* keywords need to set up from frontmatter */}
-            <SEO title={title} keywords={keywords} />
+            {
+                !preview && <SEO title={title} keywords={keywords} />
+            }
             <UpperWraper>
                 <ImgWrapper>
-                    <StyledImg fluid={fluid} />
+                    <PreviewCompatibleImage img={image} />
                 </ImgWrapper>
                 <TitleWrapper>
                     <Title>{title}</Title>
@@ -125,24 +144,27 @@ export const ClassTemplate = ({
                     {description.map((d,index)=>(
                         <Text contrast key={index}>{d}</Text>
                     ))}
-                    <BookingButton 
-                        contrast 
-                        text="Booking" 
-                        onClick={()=>setEnable(true)}
-                    /> 
-                    <Modal
-                        open={enable}
-                        onClose={()=>setEnable(false)}
-                    >
-                        <CalendlyWrapper>
-                            <Calendly url={bookingUrl} />
-                        </CalendlyWrapper>
-                    </Modal>
+                    {
+                        preview
+                        ?
+                        <StyledButton 
+                            contrast 
+                            text="Booking" 
+                        />
+                        :
+                        <BookingButton bookingUrl={bookingUrl}/>
+                    }
                 </TitleWrapper>
             </UpperWraper>
             <LowerWrapper>
                 <Text contrast>
-                    <span dangerouslySetInnerHTML={{__html: html}} />
+                    {
+                        preview
+                        ?
+                        body
+                        :
+                        <span dangerouslySetInnerHTML={{__html: body}} />
+                    }
                 </Text>
             </LowerWrapper>
         </Background>
@@ -151,17 +173,16 @@ export const ClassTemplate = ({
 
 const Class = ({data})=>{
     const { title, subtitle, image, description, bookingUrl, keywords } = data.markdownRemark.frontmatter;
-    const { fluid } = image.childImageSharp;
     const { html } = data.markdownRemark;
     return(
         <ClassTemplate 
             title={title}
             subtitle={subtitle}
-            fluid={fluid}
+            image={image}
             description={description}
             bookingUrl={bookingUrl}
             keywords={keywords}
-            html={html}
+            body={html}
         />
     );
 }

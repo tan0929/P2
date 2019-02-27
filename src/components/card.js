@@ -31,7 +31,7 @@ const SmallImg= styled(Img)`
 `;
 
 const SmallWrapper = styled.div`
-    padding: 5px 0;
+    padding: 5px;
     display: flex;
     width: 300px;
     height: 100px;
@@ -79,7 +79,7 @@ const LargeImg= styled(Img)`
 const LargeWrapper = styled.div`
     padding: 15px;
     width: 300px;
-    height: 450px;
+    height: 400px;
 `;
 
 const Large = ({title, subtitle, fluid})=>{

@@ -39,6 +39,7 @@ const Classes = ()=>(
 const ClassWrapper = styled.div`
     ${breakpoint('tablet')`
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     `}
