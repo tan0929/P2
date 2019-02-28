@@ -21,6 +21,7 @@ const TitleWrapper = styled.div`
   flex-grow: 1;
   min-width: 150px;
   padding: 30px 40px;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 const Title = styled(Main)`

@@ -35,6 +35,7 @@ const SmallWrapper = styled.div`
     display: flex;
     width: 300px;
     height: 100px;
+    -webkit-tap-highlight-color: transparent;
 `;
 
 const Small = ({title, subtitle, fluid})=>{
@@ -79,7 +80,8 @@ const LargeImg= styled(Img)`
 const LargeWrapper = styled.div`
     padding: 15px;
     width: 300px;
-    height: 400px;
+    height: 400px;   
+    -webkit-tap-highlight-color: transparent;
 `;
 
 const Large = ({title, subtitle, fluid})=>{
