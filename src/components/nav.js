@@ -5,6 +5,7 @@ import Facebook from './facebook';
 import Instagram from './instagram';
 import { graphql, StaticQuery } from 'gatsby';
 import { Secondary } from './text';
+import LangLink from './langLink';
 
 const options = [
     {
@@ -28,6 +29,14 @@ const options = [
         path: '/contact',
     },
 ];
+
+const ChineseLink = ()=>(
+    <ItemWrapper>
+        <LangLink url='https://cn.petalimn.com'>
+            <Text contrast>中文</Text>
+        </LangLink>
+    </ItemWrapper>
+);
 
 const ItemWrapper = styled.div`
     display: inline-block;
@@ -56,6 +65,7 @@ const BasicOptions = options.map(({name, path},index)=>(
 const Content = ({data})=>(
     <NavWrapper>
         {BasicOptions}
+        <ChineseLink />
         <Facebook size='18px' padding='0 10px'/>
         <Instagram size='18px' padding='0 10px'/>
     </NavWrapper>

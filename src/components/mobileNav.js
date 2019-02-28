@@ -6,6 +6,7 @@ import Link from './betterLink';
 import { Secondary } from './text';
 import Facebook from './facebook';
 import Instagram from './instagram';
+import LangLink from './langLink';
 
 const options = [
     {
@@ -29,6 +30,12 @@ const options = [
         path: '/contact',
     },
 ];
+
+const ChineseLink = ()=>(
+    <LangLink url='https://cn.petalimn.com'>
+        <Text>中文</Text>
+    </LangLink>
+);
 
 const IconWrapper = styled.div`
     margin: 30px 40px 0 0;
@@ -77,6 +84,7 @@ const MobileNav = ()=>{
             >
                 <NavWrapper onClick={()=>setVisible(false)}>
                     {BasicOptions}
+                    <ChineseLink />
                     <SocialWrapper>
                         <Facebook size='20px' padding='0 20px 0  0' color='black'/>
                         <Instagram size='20px' color='black'/>

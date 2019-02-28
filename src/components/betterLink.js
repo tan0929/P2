@@ -17,7 +17,7 @@ const NoDecoA = styled.a`
 `;
 
 const BetterLink = ({to, blank, children, ...props})=>{
-    if(to && to.startsWith('http')){
+    if(!!to && !!to.startsWith('http')){
         return(
             <NoDecoA href={to} target={blank? '_blank' : ''} {...props}>
                 {children}
