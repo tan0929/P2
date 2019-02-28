@@ -1,6 +1,7 @@
 ---
 type: class
 templateKey: class
+path: Bean Paste Cactus Cupcake
 title: Bean Paste Cactus Cupcake
 subtitle: ''
 bookingUrl: 'https://calendly.com/petalimn/bean-paste-cactuscupcake'

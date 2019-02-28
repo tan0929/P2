@@ -19,6 +19,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Type", name: "type", widget: "hidden", default: "class"}
       - {label: "TemplateKey", name: "templateKey", widget: "hidden", default: "class"}
+      - {label: "Path", name: "path", widget: "string", required: true}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
       - {label: "Booking Url", name: "bookingUrl", widget: "string"}

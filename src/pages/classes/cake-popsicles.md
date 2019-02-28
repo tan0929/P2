@@ -1,6 +1,7 @@
 ---
 type: class
 templateKey: class
+path: Cake Popsicles
 title: Cake Popsicles
 subtitle: Animal‘ s Party
 bookingUrl: 'https://calendly.com/petalimn/bean-paste-cakepopsicles'

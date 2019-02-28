@@ -24,6 +24,7 @@ exports.createPages = ({graphql, actions})=>{
                   }
                   frontmatter{
                       templateKey
+                      path
                   }
                   id
               }
@@ -36,7 +37,10 @@ exports.createPages = ({graphql, actions})=>{
       const posts = res.data.allMarkdownRemark.edges;
       posts.forEach(({node})=>{
           const id = node.id;
-          const classPath = `/classes/${_.kebabCase(node.fields.slug)}/`;
+          //const classPath = `/classes/${_.kebabCase(node.fields.slug)}/`;
+          //this line to insure petalimn chinese path and english path are the same;
+          //in english version, path should equals title equals slug
+          const classPath = `/classes/${_.kebabCase(node.frontmatter.path)}`;
           createPage({
               path: classPath,
               component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),
