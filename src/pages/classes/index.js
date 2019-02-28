@@ -37,6 +37,7 @@ const Classes = ()=>(
 );
 
 const ClassWrapper = styled.div`
+    -webkit-tap-highlight-color: transparent;
     ${breakpoint('tablet')`
         display: flex;
         flex-wrap: wrap;
