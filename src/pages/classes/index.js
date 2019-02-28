@@ -62,6 +62,7 @@ const Content = ({data}) => {
     return (
         <ReactResizeDetector handleWidth>{(width)=>(
             <Background>
+                <SEO title="Classes" keywords={[`petalimn`, `cake`, `design`]} />
                 <PageTextWrapper>
                     <Title>{pageTitle}</Title>
                     <Subtitle>{pageSubtitle}</Subtitle>
