@@ -107,6 +107,8 @@ const detailsQuery = graphql`
         title
         description
         author
+        url
+        defaultImage
       }
     }
   }

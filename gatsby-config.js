@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `PETALIMN`,
     subtitle: `CAKE DESIGN`,
-    description: `Petalimn Cake Design`,
+    description: `Petalimn Cake Design 是南加州洛杉磯地區數一數二的豆沙花蛋糕設計工作室。我們使用品質好以及健康的食材，例如豆沙，天然食物粉等來製作，它們也是非常好的素食材料，可以用來製作全素蛋糕與蛋糕裝飾。如何著色，擠花，運用小技巧和修改花嘴，甚至是花朵的佈局都意味著每個蛋糕的獨特性。`,
     url: `https://cn.petalimn.com`,
     facebook: `https://www.facebook.com/petalimn/`,
     instagram: `https://www.instagram.com/petalimn/`,
@@ -11,7 +11,7 @@ module.exports = {
     email: 'contact@petalimn.com',
     founder: 'Evelyn W.',
     author: `James Tan`,
-    defaultImage: '/img/logo.png', //need to change path
+    defaultImage: '/logo.png',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
