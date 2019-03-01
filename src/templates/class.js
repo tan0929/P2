@@ -171,7 +171,7 @@ export const ClassTemplate = ({
                 </Text>
                 <Hint>
                     <Text contrast>
-                        Please double check the date that you wish to enroll, as there will be non-refundable for cancellations. In the unlikely event that we cancel a class, a full refund will be offered.
+                        請再三確認所選取的日期和時間。由於會提前準備當天的上課材料，所以無法接受臨時取消或更換日期，恕無法退款。若遇不可抗力之因素而取消課程則全額退款。
                     </Text>
                 </Hint>
             </LowerWrapper>
