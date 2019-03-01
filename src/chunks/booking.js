@@ -34,7 +34,7 @@ const Subtitle = styled(Main)`
 `;
 
 const Text = styled(Secondary)`
-    margin: 0;
+    margin: 5px 0;
 `;
 
 const Space = styled.div`

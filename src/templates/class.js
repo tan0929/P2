@@ -80,6 +80,12 @@ const Text = styled(Secondary)`
     `}
 `;
 
+const Hint = styled.div`
+    padding: 30px 0;
+    max-width: 600px;
+    margin: auto;
+`;
+
 const StyledButton = styled(Button)`
     margin: 20px 40px;
     ${breakpoint('tablet')`
@@ -162,6 +168,7 @@ export const ClassTemplate = ({
                         :
                         <span dangerouslySetInnerHTML={{__html: body}} />
                     }
+                    <Hint>Please double check the date that you wish to enroll, as there will be non-refundable for cancellations. In the unlikely event that we cancel a class, a full refund will be offered.</Hint>
                 </Text>
             </LowerWrapper>
         </Background>
