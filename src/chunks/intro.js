@@ -63,7 +63,7 @@ const Intro = ()=>(
                 </Signature>
                 </TextWrapper>
                 <Link to='/about'>
-                  <Button text='Learn More'/>
+                  <Button text='了解更多'/>
                 </Link>
             </Background>   
         )}
@@ -74,6 +74,8 @@ const Intro = ()=>(
 
 export default Intro;
 
+// excerpt(pruneLength: 300, truncate: true)
+// you have to set truncat: true to handle non-latin character
 const query = graphql`
   query {
     logo: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "logo.png" }) {
@@ -85,11 +87,11 @@ const query = graphql`
     }
 
     about: allMarkdownRemark(filter:{frontmatter:{title :{
-        eq: "About Petalimn"
+        eq: "關於 Petalimn"
     }}}){
       edges{
         node{
-          excerpt(pruneLength: 300)
+          excerpt(pruneLength: 300, truncate: true)
           frontmatter{
             founder
           }
@@ -97,7 +99,7 @@ const query = graphql`
       }
     }
     intro: allMarkdownRemark(filter:{frontmatter:{title :{
-      eq: "Meet Evelyn W."
+      eq: "遇見 Evelyn W."
     }}}){
       edges{
         node{

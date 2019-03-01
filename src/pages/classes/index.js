@@ -93,7 +93,7 @@ const query = graphql`
     query{
         classesIntro:
         allMarkdownRemark(
-            filter:{frontmatter:{title :{ eq: "Classes"}}}){
+            filter:{frontmatter:{title :{ eq: "課程"}}}){
             edges{
                 node{
                     frontmatter{

@@ -1,13 +1,13 @@
 ---
 type: page
-title: Meet Evelyn W.
-slogan: “ There are no established rules in piping flowers, just pip with your rhythm”.
+title: 遇見 Evelyn W.
+slogan: “在擠花的世界裡沒有既定的規矩，只要順著自己的節奏”
 ---
 
-Hi, I am Evelyn, home baker, designer , instructor and founder of Petalimn. I am from Taiwan, stayed in Beijing for several years, now living in Laguna Niguel. We are loving SoCal living.
+嗨，我是Evelyn，是個烘培者也是設計師，同時也是Petalimn的創始人和教學者。我來自台灣，曾在北京待了好幾年，目前居住在Laguna Niguel，很享受南加州的生活。
 
-I used to be a website designer. I am interested in Chinese traditional culture since I moved to Beijing. I loved and still have passion for digital design and I wanted to put that passion and drive into a new business - Cake decorating. Bringing my designer background and the experience of Chinese brush painting and oil painting into culinary artistry makes my cakes one of a kind. I am always keeping my work practical, relevant and creative.
+曾經做過網站設計。自從搬到北京之後我對中式傳統文化非常有興趣。對於設計方面仍然保有熱情，我也將此份熱情轉移到我的新事業 - 蛋糕裝飾。我將自己的設計背景和中國水墨畫以及油畫的經驗，運用到烘培領域，使得我的蛋糕獨一無二，即便如此，我依然會繼續不停的練習，學習並創新嘗試。
 
-One of my favorite things about being a instructor of cake decorating is getting to learn from my students, their occupations and their stories, that is really inspired me a lot. The most important thing to learn flower pip is“ there is no established rules in piping flowers, just pip with your rhythm”. Let's forget about any techniques and just have some fun in the class.
+作為蛋糕設計教學時，最喜歡的一件事就是從我的學生身上得到不同的啟發。學習擠花最重要的技巧是認知到“擠花的世界裡沒有既定的規矩，只要順著自己的節奏”。
 
-Thank you for taking time to get to know me a little better and I hope that I have the pleasure of having classes with you in the future. For more information about classes, portfolio or how we can collaborate on an upcoming project, just feel free to contact me .
+非常感謝花時間來了解我和我的想法，希望有機會在課堂上認識大家。若想了解更多課程信息，作品或是合作事宜請儘管和我聯繫，我會非常非常開心。

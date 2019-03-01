@@ -6,6 +6,7 @@ import { Main, Secondary } from "../components/text";
 
 
 const Title = styled(Main)`
+    display: block;
     font-size: 40px;
 `;
 
@@ -26,9 +27,9 @@ const NotFoundPage = () => (
   <Background>
     <SEO title="Thanks" />
     <TextWrapper>
-        <Title>Thanks</Title>
+        <Title>謝謝</Title>
         <Text>
-            We appreciate that you’ve taken the time to write us. We’ll get back to you very soon. Please come back and see us often.
+            感謝您的來信，我們會儘快回复。請記得經常回來看看。
         </Text>
     </TextWrapper>
   </Background>

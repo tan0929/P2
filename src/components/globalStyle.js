@@ -2,7 +2,7 @@ import React from 'react';
 import  { createGlobalStyle } from 'styled-components';
 import NunitoLight from '../fonts/Nunito-Light.ttf';
 import PlayFairDisplayRegular from '../fonts/PlayfairDisplay-Regular.ttf';
-
+import NotoSansTCLight from '../fonts/NotoSansTC-Light.otf'
 const GlobalStyle = createGlobalStyle`
     body{
         background-color: rgba(0,0,0,0);
@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
     @font-face {
       font-family: PlayFairDisplay-Regular;
       src: url(${PlayFairDisplayRegular});
+    }
+    @font-face {
+      font-family: 'NotoSansTC-Light';
+      src: url(${NotoSansTCLight}) format('opentype');
     }
 `;
 

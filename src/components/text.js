@@ -9,7 +9,7 @@ const Main = styled.p`
 `;
 
 const Secondary = styled.p`
-    font-family: Nunito-Light;
+    font-family: NotoSansTC-Light;
     display: inline-block;
     color: ${({contrast})=>contrast? '#DDD' : '#2A2C30'};
     font-size: 16px;

@@ -2,18 +2,14 @@
 type: class
 templateKey: class
 path: Cake Popsicles
-title: Cake Popsicles
-subtitle: Animal‘ s Party
+title: 造型棒棒糖蛋糕
+subtitle: 動物派對
 bookingUrl: 'https://calendly.com/petalimn/bean-paste-cakepopsicles'
 description:
   - >-
-    This is a hands-on one day class. Spend a half day with Evelyn that you will
-    learn 6 different animals, various tricks and all the fundamentals of
-    creating your Animal’s Party Cake Popsicles. 
+    單堂的實作課。花半天的時間跟著Evelyn一起運用不同的技巧和基礎概念，來完成6款不造型同的可愛動物棒棒糖蛋糕。課程中會講解許多小技巧，讓大家融會貫通，一通百通，平日也可以自行完成一套自己的棒棒糖蛋糕。
   - >-
-    After class, you will know how to create and design your cake pops from
-    beginning to end. You will leave the class with your own 12 cake pops (each
-    student) to enjoy or just stare at it.
+    每位學生會在課堂上製作12個棒棒糖蛋糕，完成後可以帶回家跟家人朋友們享用，不過也可能因為捨不得吃掉一直盯著欣賞！
 thumbnail: /img/2c.jpg
 image: /img/2p.jpg
 keywords:
@@ -21,34 +17,35 @@ keywords:
   - design
   - petalimn
 ---
-### Information
 
-* Total Fee: USD200
-* Date: Please check the schedule below and click on the date you wish to enroll.
-* Time: Pick up your time after clicking on the date you wish to enroll (please arrive 5 minutes prior)
-* Skill level: Beginner (no experience required, your passion is important)
-* Duration: 5 hours
-* Age: 18 years old+
-* Location: Laguna Niguel, Orange County, California (We will send you a confirmation email including the exact location after you have made a reservation and payment)
+### 詳細信息
 
----
-
-### What is covered in this class?
-
-* How to plan and design (6 different animals)
-* How to do with different cake bases for cake pops
-* How to handle and store the cake pops
-* How to color and mix the chocolates
-* How to use the chocolates and get to know better
-* How to cover the surface and get the clean-edges
-* How to make decorations with a variety of ingredients
+* 總額：美金200
+* 日期：請點擊上面的按鈕 “線上預約” 來選擇希望的日期
+* 時間：確認日期後請選擇時間（請提前5分鐘到達）
+* 所需技能：初學者（不需經驗，有熱情最重要）
+* 所需時間：約5小時
+* 年齡：18歲以上
+* 地點： Laguna Niguel, Orange County, California（詳細地址會寫在預約付款後寄出的確認信中）
 
 ---
 
-### Provided
+### 課程概要
 
-* Equipment
-* Tools (on-site used only)
-* Ingredients
-* Apron
-* Reading Material
+* 如何規劃與設計
+* 如何使用不同的蛋糕製作棒棒糖蛋糕
+* 如何掌握和保存棒棒糖蛋糕
+* 如何將巧克力上色和調色
+* 如何使用和掌握巧克力的狀態
+* 如何沾裹表面和邊緣
+* 如何利用不同的材料裝飾
+
+---
+
+### 我們會提供
+
+* 所需設備
+* 使用道具（僅供現場使用）
+* 所需材料
+* 圍裙
+* 講義

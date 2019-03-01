@@ -82,17 +82,16 @@ const GetInTouch = ()=>(
 const Panel = ({data})=>(
     <AbsolutePanel>
         <Title>
-            Private / International workshops
+            私約 / 海外 課程活動
         </Title>
-        <Text contrast>IN</Text>
-        <Text contrast>Beijing</Text>
-        <Text contrast>Taiwan</Text>
-        <Text contrast>other countries</Text>
-        <Text contrast>Looking forward to hearing from you</Text>
+        <Text contrast>北京</Text>
+        <Text contrast>台灣</Text>
+        <Text contrast>其他國家</Text>
+        <Text contrast>期待你們的來信</Text>
         <Space />
         <EmailLink><Text contrast>{data.site.siteMetadata.email}</Text></EmailLink>
         <Link to='/contact'>
-            <Button contrast text='Get In Touch' margin='30px auto'/>
+            <Button contrast text='與我聯繫' margin='30px auto'/>
         </Link>
     </AbsolutePanel>
 );

@@ -7,8 +7,8 @@ const StyledButton = styled.button`
     background-color: rgba(0,0,0,0);
     border-radius: 5px;
     border: 1px solid ${({contrast})=>contrast? `#DBC8BE` : `#232529`};
-    font-family: Nunito-Light;
-    font-size: 15px;
+    font-family: NotoSansTC-Light;
+    font-size: 17px;
     color: ${({contrast})=>contrast? `#DBC8BE` : `#232529`};
     outline: none;
     transition: 0.3s;

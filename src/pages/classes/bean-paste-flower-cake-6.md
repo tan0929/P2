@@ -2,19 +2,14 @@
 type: class
 templateKey: class
 path: Bean Paste Flower Cake 6"
-title: Bean Paste Flower Cake 6"
-subtitle: Basic
+title: 豆沙花蛋糕6寸
+subtitle: 基礎
 bookingUrl: 'https://calendly.com/petalimn/beanpasteflowercake'
 description:
   - >-
-    This is a basic one day, hands-on class, covers various techniques and the
-    fundamentals to creating your Flower Cake. You will also learn how to make
-    perfect bean paste for flower piping and design your own cake with gorgeous
-    arrangement.
+    單堂實作課，利用多種不同的擠花技巧和基礎來創作自已的豆沙花蛋糕。也會學習到如何製作適合擠花的豆沙，以及如何完整的裝飾蛋糕。
   - >-
-    You will be able to take your own decorated 6" cake home to share with
-    friends and family. 6" cake is prepared in advance so that you can focus on
-    flower piping techniques.
+    回家時會帶上1個自己完成的6寸蛋糕，可以分享給家人和朋友們。課堂上我們會預先準備好蛋糕，這樣同學們可以專注在擠花上面喔。
 thumbnail: /img/3c.jpg
 image: /img/3p.jpg
 keywords:
@@ -22,33 +17,34 @@ keywords:
   - design
   - petalimn
 ---
-### Information
 
-* Total Fee: USD285
-* Date: Please check the schedule below and click on the date you wish to enroll.
-* Time: Pick up your time after clicking on the date you wish to enroll (please arrive 5 minutes prior)
-* Skill level: Beginner (no experience required, your passion is important)
-* Duration: 5 hours
-* Age: 18 years old+
-* Location: Laguna Niguel, Orange County, California (We will send you confirmation email including the exact location after you have made a reservation and payment)
+### 詳細信息
 
----
-
-### What is covered in this class?
-
-* How to make the bean paste for flower piping
-* How to coloring to make your own color palette
-* How to handle and store the flowers
-* Flower and leaf piping techniques and tricks
-* How to arrange and decorate on real cake
+* 總額：美金285
+* 日期：請點擊上面的按鈕 “線上預約” 來選擇希望的日期
+* 時間：確認日期後請選擇時間（請提前5分鐘到達）
+* 所需技能：初學者（不需經驗，有熱情最重要）
+* 所需時間：約5小時
+* 年齡：18歲以上
+* 地點： Laguna Niguel, Orange County, California（詳細地址會寫在預約付款後寄出的確認信中）
 
 ---
 
-### Provided
+### 學習概要
 
-* Equipment
-* Tools (on-site used only)
-* Ingredients
-* 6" Cake
-* Apron
-* Reading Material
+* 如何製作適合擠花的豆沙
+* 如何達到理想的調色
+* 如何掌握和保存豆沙花
+* 花朵和葉子的擠花技巧
+* 如何在真的蛋糕上佈局和裝飾
+
+---
+
+### 我們會提供
+
+* 所需設備
+* 使用道具（僅供現場使用）
+* 所需材料
+* 1個6寸蛋糕
+* 圍裙
+* 講義

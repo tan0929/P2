@@ -74,7 +74,7 @@ const AboutPetalimn = () => (
                             <span dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}} />
                         </Text>
                         <Link to='/contact'>
-                            <Button contrast text='Get In Touch' margin='0 0 30px 0'/>
+                            <Button contrast text='與我聯繫' margin='0 0 30px 0'/>
                         </Link>
                     </Panel>
                 </Container>
@@ -101,7 +101,7 @@ const query = graphql`
         }
     }
     allMarkdownRemark(filter:{frontmatter:{title :{
-        eq: "About Petalimn"
+        eq: "關於 Petalimn"
       }}}){
       edges{
         node{

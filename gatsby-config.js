@@ -7,7 +7,7 @@ module.exports = {
     facebook: `https://www.facebook.com/petalimn/`,
     instagram: `https://www.instagram.com/petalimn/`,
     location: 'Laguna Niguel, CA, USA',
-    slogan: 'Every petal we made is one of a kind',
+    slogan: '每片花瓣都是獨一無二',
     email: 'contact@petalimn.com',
     founder: 'Evelyn W.',
     author: `James Tan`,

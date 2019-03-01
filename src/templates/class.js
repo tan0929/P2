@@ -94,7 +94,7 @@ const BookingButton = ({bookingUrl})=>{
         <div>
             <StyledButton 
                 contrast 
-                text="Booking" 
+                text="線上預約" 
                 onClick={()=>setEnable(true)}
             />
             <Modal
@@ -146,7 +146,7 @@ export const ClassTemplate = ({
                         ?
                         <StyledButton 
                             contrast 
-                            text="Booking" 
+                            text="" 
                         />
                         :
                         <BookingButton bookingUrl={bookingUrl}/>

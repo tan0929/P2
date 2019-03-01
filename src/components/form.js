@@ -32,7 +32,7 @@ const Form = ()=>{
             <Input type='email' label='Email' name='email' required />
             <Input type='text' label='Subject' name='subject' required />
             <Textarea cols='50' rows='5' label='Message' maxLength='255' name='message' required />
-            <StyledButton contrast text='Submit' type='submit'/>
+            <StyledButton contrast text='寄送' type='submit'/>
         </StyledForm>
     );
 }

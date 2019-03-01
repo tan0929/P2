@@ -1,11 +1,11 @@
 ---
 type: page
-title: About Petalimn
+title: 關於 Petalimn
 founder: Evelyn W.
 ---
 
-Petalimn cake design is a premier bean paste flowercake design studio in Los Angeles. We are using only the finest and healthiest ingredients, like bean paste, natural food powder, rice cakes ect., they are also good vegan alternative as there is no dairy or animal products used in our some recipe. Secret tricks and tips in coloring, hand-piping, arrangement that means every cake is unique.
+Petalimn cake design 是南加州洛杉磯地區數一數二的豆沙花蛋糕設計工作室。我們使用品質好以及健康的食材，例如豆沙，天然食物粉等來製作，它們也是非常好的素食材料，可以用來製作全素蛋糕與蛋糕裝飾。如何著色，擠花，運用小技巧和修改花嘴，甚至是花朵的佈局都意味著每個蛋糕的獨特性。
 
-We love to create handmade cakes, desserts, and snacks, then share with everyone these beautiful edible art works. So we are offering various classes that you can learn how to make them, and take a cake or a set home with you to eat or just stare at. It is also perfect for special events and make something to do with families and friends.
+我們喜歡做手工蛋糕，甜點或是小點心，然後將這些美好可食用的藝術作品分享給身邊的每個人。因此我們提供各式課程讓大家可以來學習交流，將親手製作的成品帶回家吃光光或是因為不捨得吃而一直盯著欣賞！此外，這也是一個很適合與家人和朋友一同分享的時光。
 
-Maybe you found out that all the petals and flowers we made are made with bean paste instead of buttercream. Because of its texture and transparency, makes hand-piping flowers looks natural and real. We are trying to make this Chinese traditional food ingredient - bean paste different, combined with Western piping techniques to bring you those creations.
+也許你已經發現我們都是用豆沙取代奶油霜來擠花瓣和花朵。這是因為豆沙的質地和透明感可以讓擠花看起來更自然和真實。而我們也正在努力著展現中式傳統食物原料 - 豆沙，不一樣的一面，同時融合西方擠花技巧，帶領大家認識這些創作。

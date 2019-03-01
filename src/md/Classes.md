@@ -1,9 +1,9 @@
 ---
 type: page
-title: Classes
-subtitle: In general, classes are offered from Monday to Friday (10:00am- 4:00pm). To sign up online, please click on the class type you wish to enroll and schedule your date.
+title: 課程
+subtitle: 開課時間基本上是以星期一至星期五為主（ 10:00AM - 4:00PM ）。線上預約課程，請點選以下有興趣的課程，預約希望的日期和時間。
 text: 
-    - We focus on individual or small group classes (generally no more than 2) to ensure the quality of one-on-one teaching environment and that each student can receive the attention.
-    - '*If your group is more than 2, please contact me directly.'
+    - 為了保證大家的學習環境和教學品質，上課人數都是1對1或是迷你班（最多2位）的教學。
+    - '*如果好朋友或閨蜜們（超過2位）想一起報名請直接與我聯繫。'
 
 ---

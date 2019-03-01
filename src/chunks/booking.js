@@ -50,14 +50,16 @@ const Booking = ()=>(
             <Section>
                 <StyledImg fluid={data.bg.childImageSharp.fluid} />
                 <AbsolutePanel>
-                    <Title>Online Booking Classes</Title>
-                    <Subtitle contrast>Bean Paste Flower Cake</Subtitle>
-                    <Subtitle contrast>Popsicle Cake pops</Subtitle>
+                    <Title>線上預約課程</Title>
+                    <Subtitle contrast>豆沙花蛋糕</Subtitle>
+                    <Subtitle contrast>造型棒棒糖蛋糕</Subtitle>
+                    <Subtitle contrast>豆沙花杯子蛋糕</Subtitle>
                     <Space />
-                    <Text contrast>IN</Text>
+                    <Text contrast>上課地點</Text>
+                    <Text contrast>美國南加州橘郡</Text>
                     <Text contrast margin='0'>Orange County, California</Text>
                     <Link to='/classes'>
-                        <Button text='Learn More' contrast margin='50px auto'/>
+                        <Button text='了解更多' contrast margin='50px auto'/>
                     </Link>
                 </AbsolutePanel>
             </Section>   

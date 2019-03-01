@@ -9,31 +9,31 @@ import LangLink from './langLink';
 
 const options = [
     {
-        name: 'Home',
+        name: '首頁',
         path: '/',
     },
     {
-        name: 'Classes',
+        name: '課程',
         path: '/classes',
     },
     {
-        name: 'Gallery',
+        name: '作品集',
         path: '/gallery',
     },
     {
-        name: 'About',
+        name: '關於',
         path: '/about',
     },
     {
-        name: 'Contact',
+        name: '與我聯繫',
         path: '/contact',
     },
 ];
 
 const ChineseLink = ()=>(
     <ItemWrapper>
-        <LangLink url='https://cn.petalimn.com'>
-            <Text contrast>中文</Text>
+        <LangLink url='https://petalimn.com'>
+            <Text contrast>English</Text>
         </LangLink>
     </ItemWrapper>
 );

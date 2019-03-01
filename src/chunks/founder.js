@@ -56,7 +56,7 @@ const Founder = () => (
                     <Subtitle>{data.allMarkdownRemark.edges[0].node.frontmatter.slogan}</Subtitle>
                     <Content data={data}/>
                     <Link to='/contact'>
-                      <Button contrast text='Get In Touch'/>
+                      <Button contrast text='與我聯繫'/>
                     </Link>
                 </Wrapper>
             </Section>
@@ -82,7 +82,7 @@ const query = graphql`
         }
     }
     allMarkdownRemark(filter:{frontmatter:{title :{
-        eq: "Meet Evelyn W."
+        eq: "遇見 Evelyn W."
       }}}){
       edges{
         node{

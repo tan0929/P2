@@ -81,7 +81,7 @@ const Content = ({data})=>(
     <div>
         <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
         <Background>
-            <Title>Gallery</Title>
+            <Title>作品集</Title>
                 <CellWrapper>
                     {data.allFile.edges.map((edge,index)=>(
                         <Cell key={index} fluid={edge.node.childImageSharp.fluid} />
