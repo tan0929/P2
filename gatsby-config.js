@@ -3,7 +3,7 @@ module.exports = {
     title: `PETALIMN`,
     subtitle: `CAKE DESIGN`,
     description: `Petalimn Cake Design`,
-    url: `https://petalimn.com`,
+    url: `https://cn.petalimn.com`,
     facebook: `https://www.facebook.com/petalimn/`,
     instagram: `https://www.instagram.com/petalimn/`,
     location: 'Laguna Niguel, CA, USA',
