@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `PETALIMN`,
     subtitle: `CAKE DESIGN`,
-    description: `Petalimn Cake Design`,
+    description: `Petalimn cake design is a premier bean paste flowercake design studio in Los Angeles. We are using only the finest and healthiest ingredients, like bean paste, natural food powder, rice cakes ect., they are also good vegan alternative as there is no dairy or animal products used in our some recipe. Secret tricks and tips in coloring, hand-piping, arrangement that means every cake is unique.`,
     url: `https://petalimn.com`,
     facebook: `https://www.facebook.com/petalimn/`,
     instagram: `https://www.instagram.com/petalimn/`,
@@ -11,7 +11,7 @@ module.exports = {
     email: 'contact@petalimn.com',
     founder: 'Evelyn W.',
     author: `James Tan`,
-    defaultImage: '/img/logo.png', //need to change path
+    defaultImage: '/logo.png',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
