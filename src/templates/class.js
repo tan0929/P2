@@ -168,8 +168,12 @@ export const ClassTemplate = ({
                         :
                         <span dangerouslySetInnerHTML={{__html: body}} />
                     }
-                    <Hint>Please double check the date that you wish to enroll, as there will be non-refundable for cancellations. In the unlikely event that we cancel a class, a full refund will be offered.</Hint>
                 </Text>
+                <Hint>
+                    <Text contrast>
+                        Please double check the date that you wish to enroll, as there will be non-refundable for cancellations. In the unlikely event that we cancel a class, a full refund will be offered.
+                    </Text>
+                </Hint>
             </LowerWrapper>
         </Background>
     );
