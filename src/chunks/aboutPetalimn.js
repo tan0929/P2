@@ -4,9 +4,10 @@ import Img from "gatsby-image";
 import { graphql, StaticQuery } from 'gatsby';
 import Section from '../components/section';
 import breakpoint from 'styled-components-breakpoint';
-import { Secondary, Main } from "../components/text";
+import { Main, HtmlTextWrapper } from "../components/text";
 import Button from '../components/button';
 import Link from '../components/betterLink';
+import HtmlReactParser from 'html-react-parser';
 
 const Container = styled.div`
     width: 100%;
@@ -49,7 +50,7 @@ const Title = styled(Main)`
     padding: 30px 0 0 0;
 `;
 
-const Text = styled(Secondary)`
+const Text = styled(HtmlTextWrapper)`
     padding: 0 30px 30px 30px;
     margin: 0;
     line-height: 1.6em;
@@ -71,7 +72,7 @@ const AboutPetalimn = () => (
                             <Title>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
                         </TitleWrapper>
                         <Text contrast>
-                            <span dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}} />
+                            {HtmlReactParser(data.allMarkdownRemark.edges[0].node.html)}
                         </Text>
                         <Link to='/contact'>
                             <Button contrast text='Get In Touch' margin='0 0 30px 0'/>

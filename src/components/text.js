@@ -16,4 +16,12 @@ const Secondary = styled.p`
     font-weight: 200;
 `;
 
-export {Main, Secondary};
+const HtmlTextWrapper = styled.div`
+    font-family: Nunito-Light;
+    display: inline-block;
+    color: ${({contrast})=>contrast? '#DDD' : '#2A2C30'};
+    font-size: 16px;
+    font-weight: 200;
+`;
+
+export {Main, Secondary, HtmlTextWrapper};
