@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import breakpoint from 'styled-components-breakpoint';
-import { Main, Secondary } from '../components/text';
+import { Main, Secondary, HtmlTextWrapper } from '../components/text';
 import SEO from '../components/seo';
 import Button from '../components/button';
 import Calendly from '../components/calendly';
 import Modal from "@material-ui/core/Modal";
 import PreviewCompatibleImage from '../components/previewCompatibleImage';
+import HtmlReactParser from 'html-react-parser';
 
 //TODO need to connect button with calendly
 
@@ -72,6 +73,15 @@ const Subtitle = styled(Main)`
 `;
 
 const Text = styled(Secondary)`
+    font-size: 16px;
+    margin: 20px 40px;
+    line-height: 2em;
+    ${breakpoint('tablet')`
+        margin: 20px 80px;
+    `}
+`;
+
+const HtmlWrapper = styled(HtmlTextWrapper)`
     font-size: 16px;
     margin: 20px 40px;
     line-height: 2em;
@@ -173,15 +183,15 @@ export const ClassTemplate = ({
                 </TitleWrapper>
             </UpperWraper>
             <LowerWrapper>
-                <Text contrast>
-                    {
-                        preview
-                        ?
-                        body
-                        :
-                        <span dangerouslySetInnerHTML={{__html: body}} />
-                    }
-                </Text>
+                {
+                    preview
+                    ?
+                    <Text contrast>
+                        {body}
+                    </Text>
+                    :
+                    <HtmlWrapper contrast>{HtmlReactParser(body)}</HtmlWrapper>
+                }
                 <Hint>
                     <Text contrast>
                         請再三確認所選取的日期和時間。由於會提前準備當天的上課材料，所以無法接受臨時取消或更換日期，恕無法退款。若遇不可抗力之因素而取消課程則全額退款。
