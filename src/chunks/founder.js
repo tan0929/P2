@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import Img from "gatsby-image";
 import { graphql, StaticQuery } from 'gatsby';
 import Section from '../components/section';
-import { Secondary, Main } from "../components/text";
+import { Main, HtmlTextWrapper } from "../components/text";
 import Button from '../components/button';
 import Link from '../components/betterLink';
+import HtmlReactParser from 'html-react-parser';
 
 const StyledImg = styled(Img)`
     border-radius: 150px;
@@ -23,7 +24,7 @@ const Subtitle = styled(Main)`
     font-size: 18px;
 `;
 
-const Text = styled(Secondary)`
+const Text = styled(HtmlTextWrapper)`
     padding: 0 30px 30px 30px;
     line-height: 1.6em;
     margin: 0;
@@ -31,7 +32,7 @@ const Text = styled(Secondary)`
 
 const Content = ({data})=>(
     <Text contrast>
-        <span dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}} />
+        {HtmlReactParser(data.allMarkdownRemark.edges[0].node.html)}
     </Text>
 );
 
