@@ -126,16 +126,29 @@ export const ClassTemplate = ({
     subtitle,
     image,
     description,
+    body,
+    //below not for preview 
     bookingUrl,
+    thumbnail,
     keywords,
-    body
+    url
 })=>{
     
     return(
         <Background>
-            {/* keywords need to set up from frontmatter */}
+            {/* SEO will not be loaded in preview */}
             {
-                !preview && <SEO title={title} keywords={keywords} />
+                !preview 
+                && 
+                <SEO 
+                    title={title} 
+                    keywords={keywords}
+                    image={
+                        url+
+                        thumbnail.childImageSharp.original.src
+                    }
+                    description={description[0]} 
+                />
             }
             <UpperWraper>
                 <ImgWrapper>
@@ -180,17 +193,27 @@ export const ClassTemplate = ({
 }
 
 const Class = ({data})=>{
-    const { title, subtitle, image, description, bookingUrl, keywords } = data.markdownRemark.frontmatter;
+    const { 
+        title, 
+        subtitle,
+        thumbnail,
+        image, 
+        description, 
+        bookingUrl, 
+        keywords } = data.markdownRemark.frontmatter;
     const { html } = data.markdownRemark;
+    const { url } = data.site.siteMetadata;
     return(
         <ClassTemplate 
             title={title}
             subtitle={subtitle}
+            thumbnail={thumbnail}
             image={image}
             description={description}
             bookingUrl={bookingUrl}
             keywords={keywords}
             body={html}
+            url={url}
         />
     );
 }
@@ -201,6 +224,16 @@ export const query=graphql`
     query postByID($id : String!){
         markdownRemark(id: { eq: $id }){
             frontmatter{
+                thumbnail{
+                    childImageSharp{
+                        fluid(maxWidth: 600){
+                            ...GatsbyImageSharpFluid_noBase64
+                        }
+                        original{
+                            src
+                        }
+                    }
+                }
                 image{
                     childImageSharp{
                         fluid(maxWidth: 600){
@@ -215,6 +248,11 @@ export const query=graphql`
                 keywords
             }
             html
+        }
+        site {
+            siteMetadata {
+              url
+            }
         }
     }
 `;
