@@ -175,7 +175,7 @@ export const ClassTemplate = ({
                         ?
                         <StyledButton 
                             contrast 
-                            text="" 
+                            text="線上預約"
                         />
                         :
                         <BookingButton bookingUrl={bookingUrl}/>
