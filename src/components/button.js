@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
     height: 48px;
     width: 130px;
+    cursor: pointer;
     background-color: rgba(0,0,0,0);
     border-radius: 5px;
     border: 1px solid ${({contrast})=>contrast? `#DBC8BE` : `#232529`};

@@ -42,6 +42,10 @@ const Space = styled.div`
     height: 20px;
 `;
 
+const LinkWrapper = styled.div`
+    position: relative;
+`;
+
 
 const Booking = ()=>(
     <StaticQuery
@@ -56,9 +60,11 @@ const Booking = ()=>(
                     <Space />
                     <Text contrast>IN</Text>
                     <Text contrast margin='0'>Orange County, California</Text>
-                    <Link to='/classes'>
-                        <Button text='Learn More' contrast margin='50px auto'/>
-                    </Link>
+                    <LinkWrapper>
+                        <Link to='/classes'>
+                            <Button text='Learn More' contrast margin='50px auto'/>
+                        </Link>
+                    </LinkWrapper>
                 </AbsolutePanel>
             </Section>   
         )}

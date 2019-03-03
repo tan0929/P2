@@ -65,6 +65,10 @@ const Background = styled(Section)`
     height: 500px;
 `;
 
+const LinkWrapper = styled.div`
+    position: relative;
+`;
+
 const GetInTouch = ()=>(
     <StaticQuery
         query={query}
@@ -91,9 +95,11 @@ const Panel = ({data})=>(
         <Text contrast>Looking forward to hearing from you</Text>
         <Space />
         <EmailLink><Text contrast>{data.site.siteMetadata.email}</Text></EmailLink>
-        <Link to='/contact'>
-            <Button contrast text='Get In Touch' margin='30px auto'/>
-        </Link>
+        <LinkWrapper>
+            <Link to='/contact'>
+                <Button contrast text='Get In Touch' margin='30px auto'/>
+            </Link>
+        </LinkWrapper>
     </AbsolutePanel>
 );
 

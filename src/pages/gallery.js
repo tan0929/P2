@@ -21,6 +21,7 @@ const Gallery =()=>(
 )
 
 const Image = styled(Img)`
+    cursor: pointer;
     margin: 5px;
     width: 80px;
     height: 80px;
@@ -33,6 +34,7 @@ const Image = styled(Img)`
 
 const LargeImage = styled(Img)`
     width: 100%;
+    cursor: pointer;
 `;
 
 const LargeImageWrapper = styled.div`
