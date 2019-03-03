@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const NoDecoLink = styled(Link)`
   color: ${({color})=>color? color: 'black'};
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
   ${props=>props.padding ? `padding: ${props.padding}`: ''}
   ${props=>props.margin ? `margin: ${props.margin}`: ''}
 `;
@@ -12,6 +13,7 @@ const NoDecoLink = styled(Link)`
 const NoDecoA = styled.a`
   color: ${({color})=>color? color: '#DDD'};
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
   ${props=>props.padding ? `padding: ${props.padding}`: ''}
   ${props=>props.margin ? `margin: ${props.margin}`: ''}
 `;
