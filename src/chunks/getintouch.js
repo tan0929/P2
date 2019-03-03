@@ -65,6 +65,10 @@ const Background = styled(Section)`
     height: 500px;
 `;
 
+const LinkWrapper = styled.div`
+    position: relative;
+`;
+
 const GetInTouch = ()=>(
     <StaticQuery
         query={query}
@@ -90,9 +94,11 @@ const Panel = ({data})=>(
         <Text contrast>期待你們的來信</Text>
         <Space />
         <EmailLink><Text contrast>{data.site.siteMetadata.email}</Text></EmailLink>
-        <Link to='/contact'>
-            <Button contrast text='與我聯繫' margin='30px auto'/>
-        </Link>
+        <LinkWrapper>
+            <Link to='/contact'>
+                <Button contrast text='與我聯繫' margin='30px auto'/>
+            </Link>
+        </LinkWrapper>
     </AbsolutePanel>
 );
 
