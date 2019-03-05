@@ -101,7 +101,7 @@ const query = graphql`
       edges{
         node{
           childImageSharp{
-            fluid(maxWidth: 800){
+            fluid(maxWidth: 2048){
                 ...GatsbyImageSharpFluid_noBase64
             }
           }
