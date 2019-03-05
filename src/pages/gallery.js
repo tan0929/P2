@@ -33,8 +33,12 @@ const Image = styled(Img)`
 `;
 
 const LargeImage = styled(Img)`
-    width: 100%;
+    height: 92vh;
+    width: 92vw;
+    max-width: calc( 92vh * ${({ratio})=>ratio} );
+    max-height: calc( 92vw / ${({ratio})=>ratio} );
     cursor: pointer;
+    margin: auto;
 `;
 
 const LargeImageWrapper = styled.div`
@@ -59,7 +63,7 @@ const Cell = ({fluid})=>{
                 onClick={()=>setEnable(false)}
             >
                 <LargeImageWrapper>
-                    <LargeImage fluid={fluid} />
+                    <LargeImage fluid={fluid} ratio={fluid.aspectRatio}/>
                 </LargeImageWrapper>
             </Modal>
         </div> 
@@ -103,6 +107,7 @@ const query = graphql`
           childImageSharp{
             fluid(maxWidth: 2048){
                 ...GatsbyImageSharpFluid_noBase64
+                aspectRatio
             }
           }
         }
