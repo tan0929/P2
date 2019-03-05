@@ -9,7 +9,7 @@ import Link from '../components/betterLink';
 
 const StyledImg = styled(Img)`
     width: 100%;
-    height: 520px;
+    height: 600px;
 `;
 
 const AbsolutePanel = styled.div`
