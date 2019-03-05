@@ -37,7 +37,7 @@ const query = graphql`
   query {
     banner: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "02.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 2048) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
