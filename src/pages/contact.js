@@ -47,6 +47,7 @@ const ImgWrapper = styled.div`
 `;
 
 const Title = styled(Main)`
+    display: block;
     font-size: 40px;
     color: #DBC8BE;
     margin: 20px 40px;
