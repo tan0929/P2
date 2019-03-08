@@ -56,6 +56,7 @@ const Title = styled(Main)`
 `;
 
 const Text = styled(Secondary)`
+    display: block;
     font-size: 18px;
     margin: 20px 40px;
     ${breakpoint('tablet')`
