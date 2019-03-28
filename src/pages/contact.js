@@ -6,6 +6,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import breakpoint from 'styled-components-breakpoint';
 import Form from '../components/form'
 import { Main, Secondary } from "../components/text";
+import EmailLink from '../components/emailLink';
 
 const Background = styled.div`
     background-color: #232529;
