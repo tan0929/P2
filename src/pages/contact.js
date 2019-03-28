@@ -106,6 +106,8 @@ const query = graphql`
     site{
         siteMetadata{
             title
+            location
+            email
         }
     }
   }
