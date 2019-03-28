@@ -71,6 +71,10 @@ const Content=({data})=>(
             <Title>One of a kind cakes just for you.</Title>
             <Text contrast>Hi there,</Text>
             <Text contrast>We are glad to see you here. Thanks for visiting. If you have any questions for classes, international workshops, special events, or any ideas you would like to share with us, please feel free to fill out the form below or contact us directly via e-mailI. We would love to hear from you.</Text>
+            <Text contrast>{data.site.siteMetadata.location}</Text>
+            <EmailLink>
+                <Text contrast>{data.site.siteMetadata.email}</Text>
+            </EmailLink>
             <Form/>
         </FormWrapper>
     </Container>
@@ -100,6 +104,8 @@ const query = graphql`
     site{
         siteMetadata{
             title
+            location
+            email
         }
     }
   }
