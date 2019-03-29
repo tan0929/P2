@@ -15,7 +15,7 @@ collections:
     label: "Class" # Used in the UI
     folder: "src/pages/classes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{path}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Type", name: "type", widget: "hidden", default: "class"}
       - {label: "TemplateKey", name: "templateKey", widget: "hidden", default: "class"}
