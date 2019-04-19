@@ -35,7 +35,7 @@ keywords:
 
 ### What is covered in this class?
 
-* How to make the bean paste fondant (only demonstration)
+* How to make the bean paste fondant (demonstration)
 * How to coloring to make your own color palette
 * How to handle and store the bean paste fondant
 * About fondant and edible golden dust techniques and tricks
@@ -51,3 +51,4 @@ keywords:
 * 6" Cake
 * Apron
 * Reading Material
+* Bean Paste Fondant Cake Certificate of Completion (additional charge)
