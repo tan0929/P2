@@ -51,4 +51,3 @@ keywords:
 * 6" Cake
 * Apron
 * Reading Material
-* Certificate of completion (Bean Paste Fondant Cake)
