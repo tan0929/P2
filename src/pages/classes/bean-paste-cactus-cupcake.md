@@ -24,7 +24,7 @@ keywords:
 ---
 ### Information
 
-* Total Fee: 
+* Total Fee: USD180
 * Date: Please check the schedule below and click on the date you wish to enroll.
 * Time: Pick up your time after clicking on the date you wish to enroll (please arrive 5 minutes prior)
 * Skill level: Beginner (no experience required, your passion is important)',
