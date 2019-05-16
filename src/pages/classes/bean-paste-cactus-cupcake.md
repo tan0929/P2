@@ -22,10 +22,9 @@ keywords:
   - design
   - petalimn
 ---
-
 ### Information
 
-* Total Fee: USD138
+* Total Fee: 
 * Date: Please check the schedule below and click on the date you wish to enroll.
 * Time: Pick up your time after clicking on the date you wish to enroll (please arrive 5 minutes prior)
 * Skill level: Beginner (no experience required, your passion is important)',
@@ -33,7 +32,7 @@ keywords:
 * Age: 18 years old+
 * Location: Laguna Niguel, Orange County, California (We will send you a confirmation email including the exact location after you have made a reservation and payment)
 
----
+- - -
 
 ### What is covered in this class?
 
@@ -43,10 +42,10 @@ keywords:
 * Cactus and leaf piping techniques and tricks
 * How to arrange and decorate on real cupcake
 
----
+- - -
 
 ### Provided
-                  
+
 * Equipment
 * Tools (on-site used only)
 * Ingredients
