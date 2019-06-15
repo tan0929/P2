@@ -16,8 +16,8 @@ description:
     friends and family. Cupcakes are prepared in advance so that you can focus
     on piping techniques.
   - '*Flowers may vary each class.'
-thumbnail: /img/1c.jpg
-image: /img/1c.jpg
+thumbnail: /img/46.jpg
+image: /img/4.jpeg
 keywords:
   - cake
   - design
