@@ -8,8 +8,8 @@ bookingUrl: 'https://calendly.com/petalimn/beanpasteflowercake'
 description:
   - 單堂實作課，利用多種不同的擠花技巧和基礎來創作自已的豆沙花蛋糕。也會學習到如何製作適合擠花的豆沙，以及如何完整的裝飾蛋糕。
   - 回家時會帶上1個自己完成的6寸蛋糕，可以分享給家人和朋友們。課堂上我們會預先準備好蛋糕，這樣同學們可以專注在擠花上面喔。
-thumbnail: /img/3c.jpg
-image: /img/3p.jpg
+thumbnail: /img/c4.jpeg
+image: /img/c5.jpeg
 keywords:
   - cake
   - design
