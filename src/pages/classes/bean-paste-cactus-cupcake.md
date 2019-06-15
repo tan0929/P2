@@ -8,7 +8,7 @@ bookingUrl: 'https://calendly.com/petalimn/bean-paste-cactuscupcake'
 description:
   - 單堂實作課，利用多種不同的擠花技巧和基礎來創作自已的多肉植物杯子蛋糕。也會學習到如何製作適合擠花的豆沙，以及如何完整的裝飾杯子蛋糕。
   - 回家時會帶上4個自己完成的作品，可以分享給家人和朋友們。課堂上我們會預先準備好杯子蛋糕，這樣同學們可以專注在擠花上面喔。
-thumbnail: /img/0c.jpg
+thumbnail: /img/11-2.jpg
 image: /img/0c.jpg
 keywords:
   - cake
