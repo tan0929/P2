@@ -9,9 +9,15 @@ import Link from '../components/betterLink';
 import HtmlReactParser from 'html-react-parser';
 
 const StyledImg = styled(Img)`
+    width: 100%;
+    height: 100%;
+`;
+
+const ImageWrapper = styled.div`
+    overflow: hidden;
     border-radius: 150px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 320px;
 `;
 
 const Title = styled(Main)`
@@ -52,7 +58,9 @@ const Founder = () => (
         render={data=>(
             <Section>
                 <Wrapper>
-                    <StyledImg fluid={data.portrait.childImageSharp.fluid} />
+                    <ImageWrapper>
+                      <StyledImg fluid={data.portrait.childImageSharp.fluid} />
+                    </ImageWrapper>
                     <Title>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
                     <Subtitle>{data.allMarkdownRemark.edges[0].node.frontmatter.slogan}</Subtitle>
                     <Content data={data}/>
@@ -69,7 +77,7 @@ export default Founder;
 
 const query = graphql`
   query {
-    portrait: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "05.jpg" }) {
+    portrait: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "zeyan-0401.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64
