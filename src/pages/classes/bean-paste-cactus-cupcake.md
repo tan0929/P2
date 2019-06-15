@@ -15,7 +15,7 @@ description:
     You will be able to take your own decorated 4 cupcakes home to share with
     friends and family. Cupcakes are prepared in advance so that you can focus
     on piping techniques.
-thumbnail: /img/0c.jpg
+thumbnail: /img/11-2.jpg
 image: /img/0c.jpg
 keywords:
   - cake
