@@ -83,19 +83,25 @@ const Background = styled(Section)`
     padding: 30px 0 0 0;
 `;
 
-const Content = ({data})=>(
-    <div>
-        <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
-        <Background>
-            <Title>作品集</Title>
-                <CellWrapper>
-                    {data.allFile.edges.map((edge,index)=>(
-                        <Cell key={index} fluid={edge.node.childImageSharp.fluid} />
-                    ))}
-                </CellWrapper>
-        </Background>
-    </div>
-);
+const Content = ({data})=>{
+    const files = data.allFile.edges.sort((lhs,rhs)=>{
+        return lhs.node.relativePath.localeCompare(rhs.node.relativePath);
+    });
+    console.log(files.length);
+    return(
+        <div>
+            <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
+            <Background>
+                <Title>作品集</Title>
+                    <CellWrapper>
+                        {files.map(({node},index)=>(
+                            <Cell key={index} fluid={node.childImageSharp.fluid} />
+                        ))}
+                    </CellWrapper>
+            </Background>
+        </div>
+    );
+}
 
 export default Gallery;
 
@@ -104,12 +110,13 @@ const query = graphql`
     allFile(filter: {sourceInstanceName:{eq: "gallery"}}){
       edges{
         node{
-          childImageSharp{
-            fluid(maxWidth: 2048){
-                ...GatsbyImageSharpFluid_noBase64
-                aspectRatio
+            relativePath
+            childImageSharp{
+                fluid(maxWidth: 2048){
+                    ...GatsbyImageSharpFluid_noBase64
+                    aspectRatio
+                }
             }
-          }
         }
       }
     }
