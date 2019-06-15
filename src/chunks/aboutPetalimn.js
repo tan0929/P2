@@ -10,31 +10,34 @@ import Link from '../components/betterLink';
 import HtmlReactParser from 'html-react-parser';
 
 const Container = styled.div`
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px repeat(12,auto) 60px;
     width: 100%;
+    display: grid;
+    max-width: 1200px;
+`;
+
+const ImageWrapper = styled.div`
+    grid-column: 2/span 9;
+    grid-row: 2/span 11;
+    ${breakpoint('tablet')`
+        grid-column: 2/span 5;
+    `}
 `;
 
 const StyledImg = styled(Img)`
-    margin: 40px 20px 60px 20px;
-    width: 300px;
-    height: 1300px;
-    ${breakpoint('tablet')`
-        margin: 50px 40px;
-        width: 500px;
-        height: 800px;
-    `}
+    width: 100%;
+    height: 100%;
 `;
 
 const Panel = styled.div`
-    position: absolute;
-    background-color: rgba(35,37,41,0.9);
-    width: 280px;
-    right: 20px;
-    top: 60px;
+    z-index: 1;
+    grid-column: 3/span 9;
+    grid-row: 3/span 11;
     ${breakpoint('tablet')`
-        width: 600px;
-        right: 40px;
-        top: 90px;
+        grid-column: 6/span 6;
     `}
+    background-color: rgba(35,37,41,0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +45,7 @@ const Panel = styled.div`
 
 const TitleWrapper = styled.div`
     text-align: center;
-    margin: auto;
+    
 `;
 
 const Title = styled(Main)`
@@ -54,6 +57,7 @@ const Text = styled(HtmlTextWrapper)`
     padding: 0 30px 30px 30px;
     margin: 0;
     line-height: 1.6em;
+    max-width: 800px;
 `;
 
 const Background = styled(Section)`
@@ -66,7 +70,9 @@ const AboutPetalimn = () => (
         render={data=>(
             <Background>
                 <Container>
-                    <StyledImg fluid={data.bg.childImageSharp.fluid}/>
+                    <ImageWrapper>
+                        <StyledImg fluid={data.bg.childImageSharp.fluid}/>
+                    </ImageWrapper>
                     <Panel>
                         <TitleWrapper>
                             <Title>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
@@ -88,7 +94,7 @@ export default AboutPetalimn;
 
 const query = graphql`
   query {
-    bg: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "04.jpg" }) {
+    bg: file(sourceInstanceName:{eq: "images"} relativePath: { eq: "871478871016155.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64
