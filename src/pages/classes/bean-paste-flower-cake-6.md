@@ -15,8 +15,8 @@ description:
     You will be able to take your own decorated 6" cake home to share with
     friends and family. 6" cake is prepared in advance so that you can focus on
     flower piping techniques.
-thumbnail: /img/3c.jpg
-image: /img/3p.jpg
+thumbnail: /img/c4.jpeg
+image: /img/c5.jpeg
 keywords:
   - cake
   - design
