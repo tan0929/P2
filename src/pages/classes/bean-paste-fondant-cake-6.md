@@ -14,8 +14,8 @@ description:
     You will be able to take your own decorated 6" cake home to share with
     friends and family. 6" cake is prepared in advance so that you can focus on
     decorating tricks.
-thumbnail: /img/lrm_export_1940531803085884_20190227_152348863.jpeg
-image: /img/lrm_export_1940584085095728_20190227_152441145.jpeg
+thumbnail: /img/11.jpg
+image: /img/lrm_export_1940531803085884_20190227_152348863.jpeg
 keywords:
   - cake
   - design
