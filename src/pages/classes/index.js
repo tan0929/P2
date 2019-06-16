@@ -8,6 +8,7 @@ import Card from '../../components/card';
 import ReactResizeDetector from 'react-resize-detector';
 import breakpoint from 'styled-components-breakpoint';
 import Link from '../../components/betterLink';
+import Carousel from '../../components/carousel';
 import _ from 'lodash';
 
 const Background = styled(Section)`
@@ -46,6 +47,13 @@ const ClassWrapper = styled.div`
     `}
 `;
 
+const CarouselWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+`;
+
 const PageTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -59,10 +67,16 @@ const bp = 768;
 const Content = ({data}) => {
     const {title : pageTitle , subtitle : pageSubtitle, text: pageText} = data.classesIntro.edges[0].node.frontmatter;
     const edges = data.class.edges;
+    const carouselImages = data.carouselImages.edges.sort((lhs,rhs)=>{
+        return lhs.node.relativePath.localeCompare(rhs.node.relativePath);
+    });
     return (
         <ReactResizeDetector handleWidth>{(width)=>(
             <Background>
                 <SEO title="Classes" keywords={[`petalimn`, `cake`, `design`]} />
+                <CarouselWrapper>
+                    <Carousel images={carouselImages}/>
+                </CarouselWrapper>
                 <PageTextWrapper>
                     <Title>{pageTitle}</Title>
                     <Subtitle>{pageSubtitle}</Subtitle>
@@ -121,6 +135,20 @@ const query = graphql`
                                     ...GatsbyImageSharpFluid_noBase64
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+        carouselImages:
+        allFile(filter: {sourceInstanceName:{eq: "classCarousel"}}){
+            edges{
+                node{
+                    relativePath
+                    childImageSharp{
+                        fluid(maxWidth: 2048){
+                            ...GatsbyImageSharpFluid_noBase64
+                            aspectRatio
                         }
                     }
                 }
