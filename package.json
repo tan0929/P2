@@ -23,7 +23,7 @@
     "gatsby-transformer-remark": "^2.2.4",
     "gatsby-transformer-sharp": "^2.1.13",
     "html-react-parser": "^0.6.1",
-    "netlify-cms": "^2.9.0-beta.0",
+    "netlify-cms": "^2.4.1",
     "nuka-carousel": "^4.5.8",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
