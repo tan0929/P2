@@ -87,7 +87,6 @@ const Content = ({data})=>{
     const files = data.allFile.edges.sort((lhs,rhs)=>{
         return lhs.node.relativePath.localeCompare(rhs.node.relativePath);
     });
-    console.log(files.length);
     return(
         <div>
             <SEO title="Gallery" keywords={[`petalimn`, `cake`, `design`]} />
