@@ -6,9 +6,22 @@ title: 豆沙花花朵杯子蛋糕
 subtitle: ''
 bookingUrl: 'https://calendly.com/petalimn/bean-paste-floralcupcake'
 description:
+<<<<<<< HEAD
   - 單堂實作課，利用多種不同的擠花技巧和基礎來創作自已的花朵杯子蛋糕。也會學習到如何製作適合擠花的豆沙，以及如何完整的裝飾杯子蛋糕。
   - 回家時會帶上4個自己完成的作品，可以分享給家人和朋友們。課堂上我們會預先準備好杯子蛋糕，這樣同學們可以專注在擠花上面喔。
   - '*每堂課所教授的花種可能有所不同'
+=======
+  - >-
+    This is a one day, hands-on class, covers various techniques and the
+    fundamentals to creating your Floral Cupcakes. You will also learn how to
+    make perfect bean paste for flower piping and design your own cake with
+    gorgeous arrangement.
+  - >-
+    You will be able to take your own decorated 4 cupcakes home to share with
+    friends and family. Cupcakes are prepared in advance so that you can focus
+    on piping techniques.
+  - '*Flowers may vary each class.'
+>>>>>>> master
 thumbnail: /img/46.jpg
 image: /img/4.jpeg
 keywords:

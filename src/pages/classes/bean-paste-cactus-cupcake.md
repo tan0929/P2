@@ -37,6 +37,7 @@ keywords:
 
 - - -
 
+<<<<<<< HEAD
 ### 我們會提供
 
 * 所需設備
@@ -45,3 +46,15 @@ keywords:
 * 4個杯子蛋糕
 * 圍裙
 * 講義
+=======
+- - -
+
+### Provided
+
+* Equipment
+* Tools (on-site used only)
+* Ingredients
+* 4 Cupcakes
+* Apron
+* Reading Material
+>>>>>>> master

@@ -14,6 +14,16 @@ module.exports = {
     defaultImage: '/logo.png',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": [
+            "Cache-Control: public, max-age=86400",
+          ],
+        },
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
