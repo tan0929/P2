@@ -5,8 +5,9 @@ import breakpoint from 'styled-components-breakpoint';
 import { Main, Secondary, HtmlTextWrapper } from '../components/text';
 import SEO from '../components/seo';
 import Button from '../components/button';
-import Calendly from '../components/calendly';
-import Modal from "@material-ui/core/Modal";
+import Link from '../components/betterLink';
+// import Calendly from '../components/calendly';
+// import Modal from "@material-ui/core/Modal";
 import PreviewCompatibleImage from '../components/previewCompatibleImage';
 import HtmlReactParser from 'html-react-parser';
 
@@ -104,31 +105,47 @@ const StyledButton = styled(Button)`
     display: block;
 `;
 
-const BookingButton = ({bookingUrl})=>{
-    const [enable,setEnable] = useState(false);
+
+// for calendly
+// const BookingButton = ({bookingUrl})=>{
+//     const [enable,setEnable] = useState(false);
+//     return(
+//         <div>
+//             <StyledButton 
+//                 contrast 
+//                 text="Booking" 
+//                 onClick={()=>setEnable(true)}
+//             />
+//             <Modal
+//                 open={enable}
+//                 onClose={()=>setEnable(false)}
+//             >
+//                 <CalendlyWrapper>
+//                     <Calendly url={bookingUrl} />
+//                 </CalendlyWrapper>
+//             </Modal>
+//         </div>
+//     );
+// }
+
+// const CalendlyWrapper = styled.div`
+//     margin: 110px auto;
+//     max-width: 1080px
+// `;
+
+const BookingButton = ()=>{
     return(
-        <div>
+        <Link to="contact">
             <StyledButton 
                 contrast 
                 text="線上預約" 
-                onClick={()=>setEnable(true)}
             />
-            <Modal
-                open={enable}
-                onClose={()=>setEnable(false)}
-            >
-                <CalendlyWrapper>
-                    <Calendly url={bookingUrl} />
-                </CalendlyWrapper>
-            </Modal>
-        </div>
+        </Link>
     );
 }
 
-const CalendlyWrapper = styled.div`
-    margin: 110px auto;
-    max-width: 1080px
-`;
+
+
 
 export const ClassTemplate = ({
     preview,
