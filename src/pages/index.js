@@ -4,7 +4,8 @@ import Welcome from '../chunks/welcome';
 import Intro from '../chunks/intro';
 import Booking from '../chunks/booking';
 import GetInTouch from '../chunks/getintouch';
-import InstagramShow from "../chunks/instagramShow";
+//import InstagramShow from "../chunks/instagramShow";
+import GalleryShow from '../chunks/galleryShow';
 
 const IndexPage = () => (
   <div>
@@ -13,7 +14,7 @@ const IndexPage = () => (
     <Intro />
     <Booking />
     <GetInTouch />
-    <InstagramShow />
+    <GalleryShow />
   </div>
 )
 
