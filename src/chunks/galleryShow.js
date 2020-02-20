@@ -51,7 +51,7 @@ const Content = ({data})=>{
             </Wrapper>
             <LinkWrapper>
                 <Link to='/gallery'>
-                    <Button text='Go to Gallery' contrast margin='25px auto'/>
+                    <Button text='前往相冊' contrast margin='25px auto'/>
                 </Link>
             </LinkWrapper>
         </Background>
